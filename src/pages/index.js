@@ -16,7 +16,6 @@ import Layout from "@/utils/layout";
 export default function Home() {
   return (
     <>
-      <Layout title={"Waste 2 Wealth"}>
         <Hero />
         <div className="h-[90px] w-[100vw] bg-[#fff]"></div>
         <GetStarted />
@@ -30,7 +29,6 @@ export default function Home() {
         <AboutUs />
         <Cta />
         <BackToTopBtn />
-      </Layout>
     </>
   );
 }
