@@ -10,16 +10,13 @@ import TrustedPartner from "@/components/trusted-partner";
 import LocateUs from "@/components/locate-us";
 import Contact from "@/components/contact";
 import Head from "next/head";
+import ContactUs from "@/components/contact-us";
+import Layout from "@/utils/layout";
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Waste 2 Wealth</title>
-      </Head>
-
-      <main className="max-w-[1920px] bg-white mx-auto relative overflow-hidden">
-        <Header />
+      <Layout title={"Waste 2 Wealth"}>
         <Hero />
         <div className="h-[90px] w-[100vw] bg-[#fff]"></div>
         <GetStarted />
@@ -27,12 +24,12 @@ export default function Home() {
         <Services />
         <TrustedPartner />
         <LocateUs />
+        <ContactUs />
         <Contact />
         <AboutUs />
         <Cta />
-        <Footer />
         <BackToTopBtn />
-      </main>
+      </Layout>
     </>
   );
 }
