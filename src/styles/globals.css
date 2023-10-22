@@ -18,6 +18,38 @@
   font-size: 16px;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.slide-in {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #0f0f0f;
+  transform-origin: bottom;
+}
+
+.slide-out {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #38685B;
+  transform-origin: top;
+}
+
 .rdrDayNumber,
 .rdrWeekDay {
   color: #1e1f23 !important;
@@ -81,7 +113,7 @@
     @apply bg-accent hover:bg-accent-hover;
   }
 
-  .desktop-active{
+  .desktop-active {
     @apply text-ternary;
   }
 

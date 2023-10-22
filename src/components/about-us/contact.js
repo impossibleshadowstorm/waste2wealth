@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 const Contact = () => {
   return (
@@ -10,7 +9,7 @@ const Contact = () => {
           <div className="pt-24 pb-80 md:pb-52 lg:pb-24 bg-gradient-to-b from-slate-900 to-emerald-700">
             <div className="container px-4 mx-auto">
               <div className="max-w-sm">
-                {/* tootip of contcat */}
+                {/* tooltip of contact */}
                 <div className="inline-flex items-center px-5 py-2 bg-white rounded-full mb-6">
                   <span className="block w-2 h-2 mr-2 rounded-full bg-indigo-500"></span>
                   <span className="uppercase text-sm font-medium tracking-tight">

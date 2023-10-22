@@ -4,9 +4,6 @@ import { motion } from "framer-motion";
 import {
   staggerContainer,
   fadeIn,
-  planetVariants,
-  textContainer,
-  textVariant2,
 } from "../utils/motion";
 
 const HowWeWork = () => {
@@ -16,9 +13,17 @@ const HowWeWork = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap -m-6 mb-12">
             <div className="w-full p-6">
-              <h2 className="mb-16 max-w-xl font-heading font-bold text-5xl sm:text-7xl text-white">
+              <motion.h2 
+              initial={{ x: -100 }}
+              animate={{ x: 0 }}
+              transition={{
+                  type: "tween",
+                  duration: "1",
+                  delay: "0.2"
+              }}
+              className="mb-16 max-w-xl font-heading font-bold text-5xl sm:text-7xl text-white">
                 How we Work
-              </h2>
+              </motion.h2>
               <motion.div
                 variants={staggerContainer}
                 initial="hidden"
