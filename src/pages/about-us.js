@@ -1,52 +1,56 @@
+import AboutHero from "@/components/about-us/about-hero";
+import Aim from "@/components/about-us/aim";
 
 export default function AboutUs() {
   return (
     <>
-      {/* SecondSec */}
-      <section className="flex items-center py-10 bg-stone-100 xl:h-screen font-poppins dark:bg-gray-800 ">
+      <AboutHero />
+      <Aim />
+
+      <section className="flex items-center bg-stone-100 xl:h-screen font-poppins dark:bg-gray-800 ">
         <div className="justify-center flex-1 max-w-6xl py-4 mx-auto lg:py-6 md:px-6">
           <div className="flex flex-wrap ">
             <div className="w-full px-4 mb-10 lg:w-1/2 lg:mb-0">
-              <div className="relative">
-                {/* <Image src="https://i.postimg.cc/QtyYkbxp/pexels-andrea-piacquadio-927022.jpg" alt="" className="relative z-40 object-cover w-full h-96 lg:rounded-tr-[80px] lg:rounded-bl-[80px] rounded" fill priority/> */}
-                <div className="absolute z-10 hidden w-full h-full bg-blue-400 rounded-bl-[80px] rounded -bottom-6 right-6 lg:block"></div>
-                <div className="absolute z-50 text-blue-400 transform -translate-y-1/2 cursor-pointer top-1/2 left-[46%] hover:text-blue-500">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    className="w-14 h-14 bi bi-play-circle-fill"
-                    viewBox="0 0 16 16"
-                  >
-                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"></path>
-                  </svg>
+              <div className="relative lg:max-w-md">
+                {/* <img src="https://i.postimg.cc/rF0MKfBV/pexels-andrea-piacquadio-3760263.jpg" alt="aboutimage" className="relative z-10 object-cover w-full rounded h-96"> */}
+                <div className="absolute bottom-0 right-0 z-10 p-8 bg-white border-4 border-blue-500 rounded shadow dark:border-blue-400 lg:-mb-8 lg:-mr-11 sm:p-8 dark:text-gray-300 dark:bg-gray-800 ">
+                  <p className="text-lg font-semibold md:w-72">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      className="absolute top-0 left-0 w-16 h-16 text-blue-700 dark:text-gray-300 opacity-10"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"></path>
+                    </svg>{" "}
+                    Successfully Providing business solutions from 25 years
+                  </p>
                 </div>
               </div>
             </div>
-            <div className="w-full px-4 mb-10 lg:w-1/2 lg:mb-0 ">
-              <div className="relative">
-                <h1 className="absolute -top-20   left-0 text-[20px] lg:text-[100px] text-gray-900 font-bold  dark:text-gray-200 opacity-5 md:block hidden">
+            <div className="w-full px-6 mb-10 lg:w-1/2 lg:mb-0 ">
+              <div className="pl-4 mb-6 border-l-4 border-blue-500 ">
+                <span className="text-sm text-gray-600 uppercase dark:text-gray-400">
+                  Who we are?
+                </span>
+                <h1 className="mt-2 text-3xl font-black text-gray-700 md:text-5xl dark:text-gray-300">
                   About Us
                 </h1>
-                <h1 className="pl-2 text-3xl font-bold border-l-8 border-blue-400 md:text-5xl dark:text-white">
-                  Welcome to our site
-                </h1>
               </div>
-              <p className="mt-6 mb-10 text-base leading-7 text-gray-500 dark:text-gray-400">
+              <p className="mb-6 text-base leading-7 text-gray-500 dark:text-gray-400">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniamLorem ipsum dolor
-                sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                veniamLorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor
+                eiusmod tempor incididunt ut Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam Lorem
+                ipsum dolor sit amet. labore et dolore magna aliqua. Ut enim ad
+                minim veniam Lorem ipsum dolor sit amet. amet. labore et dolore
+                magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit
+                amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do Lorem ipsum dolor sit amet.
               </p>
               <a
                 href="#"
-                className="px-4 py-3 text-gray-50 transition-all transform bg-blue-400 rounded-[80px] hover:bg-blue-500 dark:hover:text-gray-100 dark:text-gray-100 "
+                className="px-4 py-2 text-gray-100 bg-blue-500 rounded dark:bg-blue-400 dark:hover:bg-blue-500 hover:bg-blue-600"
               >
                 Learn more
               </a>
@@ -54,276 +58,42 @@ export default function AboutUs() {
           </div>
         </div>
       </section>
-
-      {/* Third Section */}
+      {/* Last Section */}
       <section
-        className="h-screen flex item-center bg-yellow-200"
-        id="about-us"
+        data-section-id="1"
+        data-share=""
+        data-category="banners"
+        data-component-id="a1d2749c_01_awz"
+        className="py-4 overflow-hidden"
       >
-        <div className="bg-black">
-          <section
-            id="features"
-            className="relative block px-6 py-10 md:py-20 md:px-10  border-t border-b border-neutral-900 bg-neutral-900/30"
-          >
-            <div className="relative mx-auto max-w-5xl text-center">
-              <span className="text-gray-400 my-3 flex items-center justify-center font-medium uppercase tracking-wider">
-                Why choose us
-              </span>
-              <h2 className="block w-full bg-gradient-to-b from-white to-gray-400 bg-clip-text font-bold text-transparent text-3xl sm:text-4xl">
-                Build a Website That Your Customers Love
-              </h2>
-              <p className="mx-auto my-4 w-full max-w-xl bg-transparent text-center font-medium leading-relaxed tracking-wide text-gray-400">
-                Our templates allow for maximum customization. No technical
-                skills required - our intuitive design tools let you get the job
-                done easily.
+        <div className="container px-4 mx-auto">
+          <div className="relative pt-6 px-8 pb-7 bg-neutral-600 rounded-xl">
+            {/* <Image className="absolute -right-px -top-px" src="dashy-assets/images/elipse-gradient2.svg" alt="" data-config-id="auto-img-1-1"><img className="absolute -right-px -bottom-px" src="dashy-assets/images/elipse-gradient.svg" alt="" data-config-id="auto-img-2-1"> */}
+            <div className="relative z-10">
+              <h3
+                className="mb-1.5 text-xl text-white font-semibold"
+                data-config-id="auto-txt-1-1"
+              >
+                How can Dashy improve team insights for you?{" "}
+              </h3>
+              <p
+                className="mb-9 text-neutral-300"
+                data-config-id="auto-txt-2-1"
+              >
+                We’re working on improvements to team insights and would love
+                your feedback
               </p>
+              <a
+                className="inline-flex flex-wrap items-center px-5 py-3.5 text-sm text-neutral-50 font-medium bg-gradient-purple-left hover:bg-gradient-purple-left-dark rounded-lg transition duration-300"
+                href="#"
+                data-config-id="auto-txt-3-1"
+              >
+                Share your feedback
+              </a>
             </div>
-
-            <div className="relative mx-auto max-w-7xl z-10 grid grid-cols-1 gap-10 pt-14 sm:grid-cols-2 lg:grid-cols-3">
-              <div className="rounded-md border border-neutral-800 bg-neutral-900/50 p-8 text-center shadow">
-                <div
-                  className="button-text mx-auto flex h-12 w-12 items-center justify-center rounded-md border "
-                  style={{
-                    backgroundImage:
-                      "linear-gradient(rgb(80, 70, 229) 0%, rgb(43, 49, 203) 100%)",
-                    borderColor: "rgb(93, 79, 240)",
-                  }}
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="icon icon-tabler icon-tabler-color-swatch"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    stroke-width="2"
-                    stroke="currentColor"
-                    fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                    <path d="M19 3h-4a2 2 0 0 0 -2 2v12a4 4 0 0 0 8 0v-12a2 2 0 0 0 -2 -2"></path>
-                    <path d="M13 7.35l-2 -2a2 2 0 0 0 -2.828 0l-2.828 2.828a2 2 0 0 0 0 2.828l9 9"></path>
-                    <path d="M7.3 13h-2.3a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h12"></path>
-                    <line x1="17" y1="17" x2="17" y2="17.01"></line>
-                  </svg>
-                </div>
-                <h3 className="mt-6 text-gray-400">Customizable</h3>
-                <p className="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
-                  Tailor your landing pages look and feel, from the color scheme
-                  to the font size, to the design of the page.
-                </p>
-              </div>
-
-              <div className="rounded-md border border-neutral-800 bg-neutral-900/50 p-8 text-center shadow">
-                <div
-                  className="button-text mx-auto flex h-12 w-12 items-center justify-center rounded-md border "
-                  style={{
-                    backgroundImage:
-                      "linear-gradient(rgb(80, 70, 229) 0%, rgb(43, 49, 203) 100%)",
-                    borderColor: "rgb(93, 79, 240)",
-                  }}
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="icon icon-tabler icon-tabler-bolt"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    stroke-width="2"
-                    stroke="currentColor"
-                    fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                    <polyline points="13 3 13 10 19 10 11 21 11 14 5 14 13 3"></polyline>
-                  </svg>
-                </div>
-                <h3 className="mt-6 text-gray-400">Fast Performance</h3>
-                <p className="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
-                  We build our templates for speed in mind, for super-fast load
-                  times so your customers never waver.
-                </p>
-              </div>
-
-              <div className="rounded-md border border-neutral-800 bg-neutral-900/50 p-8 text-center shadow">
-                <div
-                  className="button-text mx-auto flex h-12 w-12 items-center justify-center rounded-md border "
-                  style={{
-                    backgroundImage:
-                      "linear-gradient(rgb(80, 70, 229) 0%, rgb(43, 49, 203) 100%)",
-                    borderColor: "rgb(93, 79, 240)",
-                  }}
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="icon icon-tabler icon-tabler-tools"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    stroke-width="2"
-                    stroke="currentColor"
-                    fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                    <path d="M3 21h4l13 -13a1.5 1.5 0 0 0 -4 -4l-13 13v4"></path>
-                    <line x1="14.5" y1="5.5" x2="18.5" y2="9.5"></line>
-                    <polyline points="12 8 7 3 3 7 8 12"></polyline>
-                    <line x1="7" y1="8" x2="5.5" y2="9.5"></line>
-                    <polyline points="16 12 21 17 17 21 12 16"></polyline>
-                    <line x1="16" y1="17" x2="14.5" y2="18.5"></line>
-                  </svg>
-                </div>
-                <h3 className="mt-6 text-gray-400">Fully Featured</h3>
-                <p className="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
-                  Everything you need to succeed and launch your landing page,
-                  right out of the box. No need to install anything else.
-                </p>
-              </div>
-            </div>
-
-            <div
-              className="absolute bottom-0 left-0 z-0 h-1/3 w-full border-b"
-              style={{
-                backgroundImage:
-                  "linearGradient(to right top, rgba(79, 70, 229, 0.2) 0%, transparent 50%, transparent 100%)",
-                borderColor: "rgba(92, 79, 240, 0.2)",
-              }}
-            ></div>
-            <div
-              className="absolute bottom-0 right-0 z-0 h-1/3 w-full"
-              style={{
-                backgroundImage:
-                  "linearGradient(to right top, rgba(79, 70, 229, 0.2) 0%, transparent 50%, transparent 100%)",
-                borderColor: "rgba(92, 79, 240, 0.2)",
-              }}
-            ></div>
-          </section>
+          </div>
         </div>
       </section>
-
-      {/* Fourth Card */}
-      <section className="py-10 lg:py-20 bg-stone-100 font-poppins dark:bg-gray-800">
-        <div className="max-w-6xl py-4 mx-auto lg:py-6 md:px-6">
-            <div className="flex flex-wrap ">
-                <div className="w-full px-4 mb-10 lg:w-1/2 lg:mb-0 ">
-                    <div className="lg:max-w-md">
-                        <div className="px-4 pl-4 mb-6 border-l-4 border-blue-500">
-                            <span className="text-sm text-gray-600 uppercase dark:text-gray-400">Who we are?</span>
-                            <h1 className="mt-2 text-3xl font-black text-gray-700 md:text-5xl dark:text-gray-300">
-                                About Us
-                            </h1>
-                        </div>
-                        <p className="px-4 mb-10 text-base leading-7 text-gray-500 dark:text-gray-400">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit
-                            amet.
-                        </p>
-                        <div className="flex flex-wrap items-center">
-                            <div className="w-full px-4 mb-6 sm:w-1/2 md:w-1/2 lg:mb-6">
-                                <div className="p-6 bg-white dark:bg-gray-900">
-                                    <span className="text-blue-500 dark:text-blue-400">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" className="w-10 h-10" fill="currentColor" viewBox="0 0 16 16">
-                                            <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"></path>
-                                            <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"></path>
-                                        </svg>
-                                    </span>
-                                    <p className="mt-4 mb-2 text-3xl font-bold text-gray-700 dark:text-gray-400">2097
-                                    </p>
-                                    <h2 className="text-sm text-gray-700 dark:text-gray-400">Projects and Plans</h2>
-                                </div>
-                            </div>
-                            <div className="w-full px-4 mb-6 sm:w-1/2 md:w-1/2 lg:mb-6">
-                                <div className="p-6 bg-white dark:bg-gray-900">
-                                    <span className="text-blue-500 dark:text-blue-400">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" className="w-10 h-10" fill="currentColor" viewBox="0 0 16 16">
-                                            <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
-                                            <path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"></path>
-                                            <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"></path>
-                                        </svg>
-                                    </span>
-                                    <p className="mt-4 mb-2 text-3xl font-bold text-gray-700 dark:text-gray-400">3,590
-                                    </p>
-                                    <h2 className="text-sm text-gray-700 dark:text-gray-400">Helped people</h2>
-                                </div>
-                            </div>
-                            <div className="w-full px-4 mb-6 sm:w-1/2 md:w-1/2 lg:mb-6">
-                                <div className="p-6 bg-white dark:bg-gray-900">
-                                    <span className="text-blue-500 dark:text-blue-400">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" className="w-10 h-10" fill="currentColor" viewBox="0 0 16 16">
-                                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
-                                        </svg>
-                                    </span>
-                                    <p className="mt-4 mb-2 text-3xl font-bold text-gray-700 dark:text-gray-400">74
-                                    </p>
-                                    <h2 className="text-sm text-gray-700 dark:text-gray-400">Volunteer</h2>
-                                </div>
-                            </div>
-                            <div className="w-full px-4 mb-6 sm:w-1/2 md:w-1/2 lg:mb-6">
-                                <div className="p-6 bg-white dark:bg-gray-900">
-                                    <span className="text-blue-500 dark:text-blue-400">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" className="w-10 h-10" fill="currentColor" viewBox="0 0 16 16">
-                                            <path d="M6 .5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1H9v1.07a7.001 7.001 0 0 1 3.274 12.474l.601.602a.5.5 0 0 1-.707.708l-.746-.746A6.97 6.97 0 0 1 8 16a6.97 6.97 0 0 1-3.422-.892l-.746.746a.5.5 0 0 1-.707-.708l.602-.602A7.001 7.001 0 0 1 7 2.07V1h-.5A.5.5 0 0 1 6 .5zm2.5 5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5zM.86 5.387A2.5 2.5 0 1 1 4.387 1.86 8.035 8.035 0 0 0 .86 5.387zM11.613 1.86a2.5 2.5 0 1 1 3.527 3.527 8.035 8.035 0 0 0-3.527-3.527z"></path>
-                                        </svg>
-                                    </span>
-                                    <p className="mt-4 mb-2 text-3xl font-bold text-gray-700 dark:text-gray-400">100
-                                    </p>
-                                    <h2 className="text-sm text-gray-700 dark:text-gray-400">Timing</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="w-full px-4 mb-10 lg:w-1/2 lg:mb-0">
-                    {/* <img src="https://i.postimg.cc/9MW8G96J/pexels-the-coach-space-2977565.jpg" alt="" className="relative z-40 object-cover w-full h-full rounded"> */}
-                </div>
-            </div>
-        </div>
-    </section>
-    {/* Fifth Card */}
-    <section className="flex items-center bg-stone-100 xl:h-screen font-poppins dark:bg-gray-800 ">
-        <div className="justify-center flex-1 max-w-6xl py-4 mx-auto lg:py-6 md:px-6">
-            <div className="flex flex-wrap ">
-                <div className="w-full px-4 mb-10 lg:w-1/2 lg:mb-0">
-                    <div className="relative lg:max-w-md">
-                        {/* <img src="https://i.postimg.cc/rF0MKfBV/pexels-andrea-piacquadio-3760263.jpg" alt="aboutimage" className="relative z-10 object-cover w-full rounded h-96"> */}
-                        <div className="absolute bottom-0 right-0 z-10 p-8 bg-white border-4 border-blue-500 rounded shadow dark:border-blue-400 lg:-mb-8 lg:-mr-11 sm:p-8 dark:text-gray-300 dark:bg-gray-800 ">
-                            <p className="text-lg font-semibold md:w-72">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="absolute top-0 left-0 w-16 h-16 text-blue-700 dark:text-gray-300 opacity-10" viewBox="0 0 16 16">
-                                    <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z">
-                                    </path>
-                                </svg> Successfully Providing business solutions from 25 years
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div className="w-full px-6 mb-10 lg:w-1/2 lg:mb-0 ">
-                    <div className="pl-4 mb-6 border-l-4 border-blue-500 ">
-                        <span className="text-sm text-gray-600 uppercase dark:text-gray-400">Who we are?</span>
-                        <h1 className="mt-2 text-3xl font-black text-gray-700 md:text-5xl dark:text-gray-300">
-                            About Us
-                        </h1>
-                    </div>
-                    <p className="mb-6 text-base leading-7 text-gray-500 dark:text-gray-400">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit
-                        amet. labore et dolore magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit
-                        amet. amet. labore et dolore magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit
-                        amet.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        Lorem ipsum dolor sit amet.
-                    </p>
-                    <a href="#" className="px-4 py-2 text-gray-100 bg-blue-500 rounded dark:bg-blue-400 dark:hover:bg-blue-500 hover:bg-blue-600">
-                        Learn more
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
     </>
   );
 }

@@ -6,6 +6,10 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      display: ["Oswald"],
+      body: ['"Open Sans"'],
+    },
     container: {
       padding: {
         DEFAULT: "15px",
