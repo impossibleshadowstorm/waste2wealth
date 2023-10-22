@@ -12,7 +12,7 @@ const nextConfig = {
       "companieslogo.com",
       "www.freepnglogos.com",
       "1000logos.net",
-      "i.postimg.cc"
+      "i.postimg.cc",
     ],
   },
 };
