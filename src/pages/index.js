@@ -10,6 +10,8 @@ import Contact from "@/components/contact";
 import WhyUs from "@/components/why-us";
 import ContactUs from "@/components/contact-us";
 import HowWeWork from "@/components/how-we-work";
+import AppreciatedBy from "@/components/appreciated-by";
+import Abc from "@/components/abc";
 
 export default function Home() {
   return (
@@ -19,6 +21,8 @@ export default function Home() {
         <HowWeWork />
         {/* <GetStarted /> */}
         <div className="h-[90px] w-[100vw] bg-[#000]"></div>
+        <Abc />
+        <AppreciatedBy />
         <Services />
         <TrustedPartner />
         <LocateUs />
