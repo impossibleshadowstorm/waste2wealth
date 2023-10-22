@@ -48,12 +48,12 @@ export default function Header() {
       <div className={`xl:container mx-auto flex flex-col xl:flex-row xl:items-center xl:justify-between ${nav ? "" : "h-[70px]"}`}>
         <div className="flex justify-between items-center px-4">
           <Link
-            to="home"
+            href="/"
             smooth={desktopMode}
             spy={true}
             className="cursor-pointer"
           >
-            <Image src={nav ? "/icons/primary-logo.svg" : "/icons/logo.svg"} width={194} height={64} alt="Logo" priority />
+            <Image src={nav ? "/icons/primary-logo.svg" : "/icons/logo-white.svg"} width={194} height={64} alt="Logo" priority />
           </Link>
           {/* Nav OPen Menu */}
           <div
