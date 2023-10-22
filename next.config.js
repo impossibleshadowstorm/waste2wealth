@@ -14,7 +14,8 @@ const nextConfig = {
       "1000logos.net",
       "i.postimg.cc",
       "demo.happyaddons.com",
-      "www.dropbox.com"
+      "www.dropbox.com",
+      "shuffle.dev"
     ],
   },
 };

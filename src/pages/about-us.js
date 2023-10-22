@@ -1,6 +1,7 @@
 import Image from "next/image";
 import AboutHero from "@/components/about-us/about-hero";
 import Aim from "@/components/about-us/aim";
+import Contact from "@/components/about-us/contact";
 
 export default function AboutUs() {
   return (
@@ -44,12 +45,12 @@ export default function AboutUs() {
                   Who we are?
                 </span>
                 <h1 className="mt-2 text-3xl font-black text-gray-700 md:text-5xl dark:text-gray-300">
-                Our Belief
-
+                  Our Belief
                 </h1>
               </div>
               <p className="mb-6 text-base leading-7 text-gray-500 dark:text-gray-400">
-              We believe that India can be a greener and cleaner country, as every household commits to getting their dry scrap recycled,
+                We believe that India can be a greener and cleaner country, as
+                every household commits to getting their dry scrap recycled,
               </p>
               <a
                 href="#"
@@ -97,9 +98,7 @@ export default function AboutUs() {
           </div>
         </div>
       </section>
-
-      {/* card */}
-              
+      <Contact />
     </>
   );
 }

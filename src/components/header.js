@@ -1,7 +1,7 @@
 "use client";
 import React, { useContext, useEffect, useState } from "react";
 import Image from "next/image";
-import { Link } from "react-scroll";
+import Link from "next/link";
 import { useMediaQuery } from "react-responsive";
 import { BiMenuAltRight, BiX } from "react-icons/bi";
 import { SearchContext, useSearchContext } from "../context/search";
@@ -41,11 +41,19 @@ export default function Header() {
 
   return (
     <header
-      className={`${ nav ? "bg-[#fff]" :
-        header ? "bg-[#38685B] shadow-md py-2" : "bg-transparent shadow-none py-4"
+      className={`${
+        nav
+          ? "bg-[#fff]"
+          : header
+          ? "bg-[#38685B] shadow-md py-2"
+          : "bg-transparent shadow-none py-4"
       } fixed w-full max-w-[1920px] mx-auto z-30 transition-all duration-300`}
     >
-      <div className={`xl:container mx-auto flex flex-col xl:flex-row xl:items-center xl:justify-between ${nav ? "" : "h-[70px]"}`}>
+      <div
+        className={`xl:container mx-auto flex flex-col xl:flex-row xl:items-center xl:justify-between ${
+          nav ? "" : "h-[70px]"
+        }`}
+      >
         <div className="flex justify-between items-center px-4">
           <Link
             href="/"
@@ -53,7 +61,13 @@ export default function Header() {
             spy={true}
             className="cursor-pointer"
           >
-            <Image src={nav ? "/icons/primary-logo.svg" : "/icons/logo-white.svg"} width={194} height={64} alt="Logo" priority />
+            <Image
+              src={nav ? "/icons/primary-logo.svg" : "/icons/logo-white.svg"}
+              width={194}
+              height={64}
+              alt="Logo"
+              priority
+            />
           </Link>
           {/* Nav OPen Menu */}
           <div
@@ -74,8 +88,10 @@ export default function Header() {
           } flex flex-col w-full bg-white gap-y-6 overflow-hidden font-bold xl:font-medium xl:flex-row xl:w-max xl:gap-x-8 xl:h-max xl:bg-transparent xl:pb-0 transition-all duration-150 text-center xl:text-left uppercase text-sm xl:text-[15px] xl:normal-case`}
         >
           <Link
-            className={`cursor-pointer ${nav ? "" : "text-white hover:text-[#F5D856]"}`}
-            to="home"
+            href="/"
+            className={`cursor-pointer ${
+              nav ? "" : "text-white hover:text-[#F5D856]"
+            }`}
             activeClass={`${nav ? "active" : "desktop-active"}`}
             smooth={desktopMode}
             spy={true}
@@ -83,8 +99,10 @@ export default function Header() {
             Home
           </Link>
           <Link
-            className={`cursor-pointer ${nav ? "" : "text-white hover:text-[#F5D856]"}`}
-            to="services"
+            href="services"
+            className={`cursor-pointer ${
+              nav ? "" : "text-white hover:text-[#F5D856]"
+            }`}
             activeClass={`${nav ? "active" : "desktop-active"}`}
             smooth={desktopMode}
             spy={true}
@@ -92,8 +110,10 @@ export default function Header() {
             Services
           </Link>
           <Link
-            className={`cursor-pointer ${nav ? "" : "text-white hover:text-[#F5D856]"}`}
-            to="about-us"
+            href="about-us"
+            className={`cursor-pointer ${
+              nav ? "" : "text-white hover:text-[#F5D856]"
+            }`}
             activeClass={`${nav ? "active" : "active"}`}
             smooth={desktopMode}
             spy={true}
@@ -101,8 +121,10 @@ export default function Header() {
             About Us
           </Link>
           <Link
-            className={`cursor-pointer ${nav ? "" : "text-white hover:text-[#F5D856]"}`}
-            to="scrap-rates"
+            href="scrap-rates"
+            className={`cursor-pointer ${
+              nav ? "" : "text-white hover:text-[#F5D856]"
+            }`}
             activeClass={`${nav ? "active" : "desktop-active"}`}
             smooth={desktopMode}
             spy={true}
@@ -110,8 +132,10 @@ export default function Header() {
             Scrap Rates
           </Link>
           <Link
-            className={`cursor-pointer ${nav ? "" : "text-white hover:text-[#F5D856]"}`}
-            to="careers"
+            href="careers"
+            className={`cursor-pointer ${
+              nav ? "" : "text-white hover:text-[#F5D856]"
+            }`}
             activeClass={`${nav ? "active" : "active"}`}
             smooth={desktopMode}
             spy={true}
@@ -119,8 +143,8 @@ export default function Header() {
             Careers
           </Link>
           <Link
+            href=""
             className="xl:hidden btn btn-primary btn-sm max-w-[164px] mx-auto"
-            to="/"
             activeClass={`${nav ? "active" : "desktop-active"}`}
             smooth={desktopMode}
             spy={true}

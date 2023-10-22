@@ -15,7 +15,7 @@ const LocateUs = () => {
       >
         {/* First */}
         <motion.div
-          variants={fadeIn("down", "tween", 0.2, 1)}
+          variants={fadeIn("left", "tween", 0.2, 1)}
           className={
             "md:flex-1 flex flex-row xs:max-sm:flex-col xs:max-sm:px-0 justify-evenly items-center mx-0 px-0 z-20 bg-[transparent]"
           }
@@ -47,7 +47,7 @@ const LocateUs = () => {
         </motion.div>
         {/* Second */}
         <motion.div
-          variants={fadeIn("down", "tween", 0.2, 1)}
+          variants={fadeIn("right", "tween", 0.2, 1)}
           className="relative xl:w-1/2 sm:w-[100vw] md:flex-1 flex md:h-[90vh] flex-row xs:max-sm:px-0 bg-[#fff] sm:h-[60vh] justify-evenly items-center px-8 py-10 z-20 md:flex-2 md:w-1/2 w-[100vw] xs:h-[60vh] box-border flex justify-center items-center"
         >
           <Image

@@ -3,6 +3,7 @@ import Image from "next/image";
 import Search from "./search";
 import { SearchContext } from "../context/search";
 import { useContext } from "react";
+import Link from "next/link";
 
 export default function Hero() {
   const { searchActive } = useContext(SearchContext);
@@ -22,8 +23,8 @@ export default function Hero() {
               into cash effortlessly while contributing to a greener planet.
             </p>
             {/* Btn */}
-            <a
-              href="#_"
+            <Link
+              href="/about-us"
               className="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-black transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 group xl:mb-0 lg:mt-16 mt-8"
             >
               <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-[black] group-hover:h-full"></span>
@@ -62,7 +63,7 @@ export default function Hero() {
               <span className="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">
                 Read About Us
               </span>
-            </a>
+            </Link>
           </div>
           <div className="relative w-full h-full max-h-[50vh] md:max-w-[70vw] xl:max-w-[860px] xl:max-h-[542px] xl:absolute xl:-right-[100px] min-[1680px] :right-[120px] xl:top-[100px] xl:mb-0 lg:mt-16 md:mt-16 mt-8">
             <Image
