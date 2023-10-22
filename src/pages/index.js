@@ -10,10 +10,14 @@ import WhyUs from "@/components/why-us";
 import ContactUs from "@/components/contact-us";
 import HowWeWork from "@/components/how-we-work";
 import AppreciatedBy from "@/components/appreciated-by";
+import Abc from "@/components/abc";
+import Stats from "@/components/stats";
 
 export default function Home() {
   return (
     <>
+        <Abc />
+        
       <Hero />
       <div className="lg:h-[90px] w-[100vw] bg-[#000]"></div>
       <HowWeWork />
@@ -23,6 +27,7 @@ export default function Home() {
       <Services />
       <TrustedPartner />
       <LocateUs />
+        <Stats/>
       <WhyUs />
       <ContactUs />
       {/* <Cta />
