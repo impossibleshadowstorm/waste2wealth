@@ -12,6 +12,7 @@ import ContactUs from "@/components/contact-us";
 import HowWeWork from "@/components/how-we-work";
 import AppreciatedBy from "@/components/appreciated-by";
 import Abc from "@/components/abc";
+import Stats from "@/components/stats";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
         <LocateUs />
         <ContactUs />
         <Contact />
+        <Stats/>
         <WhyUs/>
         <Cta />
         <BackToTopBtn />

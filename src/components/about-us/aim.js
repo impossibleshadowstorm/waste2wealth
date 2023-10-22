@@ -1,11 +1,23 @@
+import Image from "next/image";
 import React from "react";
 
 const Aim = () => {
   return (
-    <section class="flex items-center xl:h-screen font-poppins dark:bg-white ">
-      <div class="justify-center flex-1 max-w-6xl py-4 mx-auto lg:py-6 md:px-6">
+    <section class="flex items-center xl:h-screen font-poppins dark:bg-white relative">
+      <div
+        className="absolute bg-scroll"
+        style={{
+          backgroundImage: `url('/images/about-us-bg.png')`,
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          objectFit: "cover",
+          height: "100vh",
+          width: "30vw",
+        }}
+      ></div>
+      <div class="justify-center flex-1 max-w-6xl z-0 py-4 mx-auto lg:py-6 md:px-6">
         <div class="flex flex-wrap items-center ">
-          <div class="w-full px-4 mb-10 lg:w-1/2 lg:mb-0">
+          <div class="w-full px-4 mb-10 lg:w-1/2 lg:mb-0 relative">
             <div class="lg:max-w-md">
               <span class="text-xl italic font-sans font-serif font-bold text-primary uppercase">
                 Our Aim
@@ -41,9 +53,8 @@ const Aim = () => {
                 </h2>
                 <p class="text-base leading-loose text-gray-800">
                   Our vision is to bring a circular economy into a reality where
-                  used products are
-                  the over-exploitation of natural resources and maximize
-                  recycling.
+                  used products are the over-exploitation of natural resources
+                  and maximize recycling.
                 </p>
               </div>
             </div>
