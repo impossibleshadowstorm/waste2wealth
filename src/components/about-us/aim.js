@@ -40,8 +40,10 @@ const Aim = () => {
                   Vission
                 </h2>
                 <p class="text-base leading-loose text-gray-800">
-                  Lorem ipsum dor amet Lorem ipsum dor amet is a dummy text
-                  .Lorem ipsum dor amet isopinus ipaino
+                  Our vision is to bring a circular economy into a reality where
+                  used products are
+                  the over-exploitation of natural resources and maximize
+                  recycling.
                 </p>
               </div>
             </div>
@@ -64,8 +66,9 @@ const Aim = () => {
                   Mission
                 </h2>
                 <p class="text-base leading-loose text-gray-800">
-                  Lorem ipsum dor amet Lorem ipsum dor amet is a dummy text
-                  .Lorem ipsum dor amet isopinus ipaino
+                  Our mission is to make a world where nothing is wasted, the
+                  sustainable living through doing the right waste treatment
+                  that is to get it recycled.
                 </p>
               </div>
             </div>
@@ -87,8 +90,9 @@ const Aim = () => {
                   Goal
                 </h2>
                 <p class="text-base leading-loose text-gray-800">
-                  Lorem ipsum dor amet Lorem ipsum dor amet is a dummy text
-                  .Lorem ipsum dor amet isopinus ipaino
+                  Through continuous innovation of technology, our goal is to
+                  make recycling achievable and accessible to all, from
+                  institutions to individuals.
                 </p>
               </div>
             </div>

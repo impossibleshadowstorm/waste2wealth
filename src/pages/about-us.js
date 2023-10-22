@@ -1,3 +1,4 @@
+import Image from "next/image";
 import AboutHero from "@/components/about-us/about-hero";
 import Aim from "@/components/about-us/aim";
 
@@ -7,13 +8,22 @@ export default function AboutUs() {
       <AboutHero />
       <Aim />
 
+      {/* Fifth Card */}
+
       <section className="flex items-center bg-stone-100 xl:h-screen font-poppins dark:bg-gray-800 ">
         <div className="justify-center flex-1 max-w-6xl py-4 mx-auto lg:py-6 md:px-6">
           <div className="flex flex-wrap ">
-            <div className="w-full px-4 mb-10 lg:w-1/2 lg:mb-0">
-              <div className="relative lg:max-w-md">
-                {/* <img src="https://i.postimg.cc/rF0MKfBV/pexels-andrea-piacquadio-3760263.jpg" alt="aboutimage" className="relative z-10 object-cover w-full rounded h-96"> */}
-                <div className="absolute bottom-0 right-0 z-10 p-8 bg-white border-4 border-blue-500 rounded shadow dark:border-blue-400 lg:-mb-8 lg:-mr-11 sm:p-8 dark:text-gray-300 dark:bg-gray-800 ">
+            <div className="w-full  px-4 mb-10 lg:w-1/2 lg:mb-0">
+              <div className="relative lg:max-w-md  h-[350px]">
+                <Image
+                  style={{ objectFit: "contain" }}
+                  src="/images/delivery-van.png"
+                  alt=""
+                  className="relative z-0 object-cover w-full h-96 lg:rounded-tr-[80px] lg:rounded-bl-[80px] rounded"
+                  fill
+                  priority
+                />{" "}
+                <div className="absolute bottom-0 right-0 z-10 p-8 bg-white border-4 border-[#39685D] rounded shadow dark:border-[#F5D856] lg:-mb-8 lg:-mr-11 sm:p-8 dark:text-gray-300 dark:bg-gray-800 ">
                   <p className="text-lg font-semibold md:w-72">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -34,19 +44,12 @@ export default function AboutUs() {
                   Who we are?
                 </span>
                 <h1 className="mt-2 text-3xl font-black text-gray-700 md:text-5xl dark:text-gray-300">
-                  About Us
+                Our Belief
+
                 </h1>
               </div>
               <p className="mb-6 text-base leading-7 text-gray-500 dark:text-gray-400">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam Lorem
-                ipsum dolor sit amet. labore et dolore magna aliqua. Ut enim ad
-                minim veniam Lorem ipsum dolor sit amet. amet. labore et dolore
-                magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit
-                amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do Lorem ipsum dolor sit amet.
+              We believe that India can be a greener and cleaner country, as every household commits to getting their dry scrap recycled,
               </p>
               <a
                 href="#"
@@ -94,6 +97,7 @@ export default function AboutUs() {
           </div>
         </div>
       </section>
+      
     </>
   );
 }
