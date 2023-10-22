@@ -52,13 +52,6 @@ const WhyUs = () => {
               </div>
               <div className="text-center">
               <FaDollarSign className="text-8xl"/>
-                {/* <a
-                  className="relative group inline-block py-4 px-6 text-center text-orange-50 bg-green-900 font-semibold rounded-full overflow-hidden"
-                  href="#"
-                >
-                  <div className="absolute top-0 right-full w-full h-full bg-primary transform group-hover:translate-x-full group-hover:scale-102 transition duration-500"></div>
-                  <span className="relative">Get it for free</span>
-                </a> */}
               </div>
             </div>
           </div>
@@ -72,15 +65,6 @@ const WhyUs = () => {
               </div>
               <div className="text-center">
               <FaTruck className="text-8xl"/>
-                {/* <span className="block text-5xl font-bold text-gray-900 mb-4">
-                  $50
-                </span>
-                <a
-                  className="inline-block py-4 px-6 text-center text-orange-900 border border-gray-200 hover:border-orange-900 font-semibold rounded-full transition duration-200"
-                  href="#"
-                >
-                  Start 7-days Trial
-                </a> */}
               </div>
             </div>
           </div>
@@ -93,15 +77,6 @@ const WhyUs = () => {
                 </p>
               </div>
               <div className="text-center relative flex justify-center items-center">
-                {/* <span className="block text-5xl font-bold text-gray-900 mb-4">
-                  $150
-                </span>
-                <a
-                  className="inline-block py-4 px-6 text-center text-orange-900 border border-gray-200 hover:border-orange-900 font-semibold rounded-full transition duration-200"
-                  href="#"
-                >
-                  Start 7-days Trial
-                </a> */}
                 <FaComputer className="text-8xl" />
                 {/* <Image src="/images/delivery-van.png" alt="" fill priority style={{objectFit: "contain"}}/> */}
               </div>

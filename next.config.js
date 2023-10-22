@@ -13,6 +13,8 @@ const nextConfig = {
       "www.freepnglogos.com",
       "1000logos.net",
       "i.postimg.cc",
+      "demo.happyaddons.com",
+      "www.dropbox.com"
     ],
   },
 };
