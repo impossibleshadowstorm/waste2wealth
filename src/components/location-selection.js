@@ -1,15 +1,17 @@
 "use client";
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import { Menu } from "@headlessui/react";
 import { FaMapMarkerAlt } from "react-icons/fa";
+import { SearchContext } from "@/context/search";
 
 const locations = [
-  "Main Street 123, United States",
-  "Business Avenue 456, Canada",
-  "Park Road 789, United Kingdom",
+  "Bhopal, India",
+  "Delhi, India",
+  "Chandigarh, India",
 ];
 export default function LocationSelection() {
-  const [location, setLocation] = useState("Select Location");
+  const { location, setLocation } = useContext(SearchContext);
+  // const [location, setLocation] = useState("Select Location");
 
   return (
     <Menu as="div" className="w-full h-full flex xl:flex-row">

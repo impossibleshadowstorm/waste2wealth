@@ -1,8 +1,9 @@
 "use client";
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Menu } from "@headlessui/react";
 import { FaClock } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { SearchContext } from "@/context/search";
 
 const hours = [
   "10:00 AM",
@@ -17,7 +18,8 @@ const hours = [
 ];
 
 export default function HoursSelection() {
-  const [hour, setHour] = useState("10:00 AM");
+  const {hour, setHour} = useContext(SearchContext);
+  // const [hour, setHour] = useState("10:00 AM");
   return (
     <Menu as="div" className="w-full h-full flex xl:flex-row">
       <div className="relative flex-1">

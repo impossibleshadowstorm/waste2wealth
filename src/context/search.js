@@ -6,8 +6,29 @@ export const SearchContext = createContext();
 
 export const SearchContextProvider = ({ children }) => {
   const [searchActive, setSearchActive] = useState(false);
+  const [location, setLocation] = useState("Select Location");
+  const [hour, setHour] = useState("10:00 AM");
+  const [date, setDate] = useState([
+    {
+      startDate: new Date(),
+      endDate: new Date(),
+      key: "selection",
+    },
+  ]);
+
   return (
-    <SearchContext.Provider value={{ searchActive, setSearchActive }}>
+    <SearchContext.Provider
+      value={{
+        searchActive,
+        setSearchActive,
+        date,
+        setDate,
+        location,
+        setLocation,
+        hour,
+        setHour,
+      }}
+    >
       {children}
     </SearchContext.Provider>
   );

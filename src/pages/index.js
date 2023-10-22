@@ -1,7 +1,8 @@
+"use client";
 import Hero from "@/components/hero";
-import AboutUs from "@/pages/about-us";
-import BackToTopBtn from "@/components/back-to-top-btn";
-import Cta from "@/components/cta";
+// import AboutUs from "@/pages/about-us";
+// import BackToTopBtn from "@/components/back-to-top-btn";
+// import Cta from "@/components/cta";
 // import GetStarted from "@/components/get-started";
 import Services from "@/components/services";
 import TrustedPartner from "@/components/trusted-partner";
@@ -10,15 +11,25 @@ import WhyUs from "@/components/why-us";
 import ContactUs from "@/components/contact-us";
 import HowWeWork from "@/components/how-we-work";
 import AppreciatedBy from "@/components/appreciated-by";
-import Abc from "@/components/abc";
 import Stats from "@/components/stats";
+import AuthModal from "@/components/common/auth-modal";
+import { useState } from "react";
 
 export default function Home() {
+  const [show, setShow] = useState(false);
+  
+
+  const hideAuthModal = () => {
+    setShow(false);
+  };
+
+  const showAuthModal = () => {
+    setShow(true);
+  };
+
   return (
     <>
-        <Abc />
-        
-      <Hero />
+      <Hero showAuthModal={showAuthModal} />
       <div className="lg:h-[90px] w-[100vw] bg-[#000]"></div>
       <HowWeWork />
       {/* <GetStarted /> */}
@@ -27,11 +38,13 @@ export default function Home() {
       <Services />
       <TrustedPartner />
       <LocateUs />
-        <Stats/>
+      <Stats />
       <WhyUs />
       <ContactUs />
       {/* <Cta />
       <BackToTopBtn /> */}
+      <AuthModal show={show} hideAuthModal={hideAuthModal} />
+      {/* {show && <AuthModal show={show} hideAuthModal={hideAuthModal} />} */}
     </>
   );
 }

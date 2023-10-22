@@ -5,7 +5,7 @@ import { SearchContext } from "../context/search";
 import { useContext } from "react";
 import Link from "next/link";
 
-export default function Hero() {
+export default function Hero({ showAuthModal }) {
   const { searchActive } = useContext(SearchContext);
 
   return (
@@ -79,11 +79,11 @@ export default function Hero() {
       <div>
         {searchActive ? (
           <div className="fixed top-[90px] z-10 w-full max-w-[1920px] z-50">
-            <Search />
+            <Search showAuthModal={showAuthModal} />
           </div>
         ) : (
           <div className="-mt-12 w-full max-w-[1300px] mx-auto">
-            <Search />
+            <Search showAuthModal={showAuthModal} />
           </div>
         )}
       </div>
