@@ -40,7 +40,7 @@ export default function Home() {
       <Hero
         showAuthModal={showAuthModal}
       />
-      <div className="lg:h-[90px] w-[100vw] bg-[#000]"></div>
+      <div className="lg:h-[90px] w-[100vw] bg-[#0E0E0E]"></div>
       <HowWeWork />
       {/* <GetStarted /> */}
       <div className="h-[90px] w-[100vw] bg-[#0E0E0E]"></div>

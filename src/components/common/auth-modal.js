@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, { useContext, useState } from "react";
 import { ErrorSnackbar, SuccessSnackbar } from "./snackbars";
 import { SearchContext } from "@/context/search";
-import { api } from "@/api/axios";
+import { apiConfig } from "@/api/api-config";
 import { FaCross, FaX } from "react-icons/fa6";
 
 const AuthModal = ({ show, hideAuthModal, showSuccessAppointmentModal }) => {
@@ -25,7 +25,7 @@ const AuthModal = ({ show, hideAuthModal, showSuccessAppointmentModal }) => {
       const headers = {
         "Content-Type": "application/json",
       };
-      const response = await api.post(
+      const response = await apiConfig.post(
         `user/otp/${email}`,
         {
           otp: otp,
@@ -67,7 +67,7 @@ const AuthModal = ({ show, hideAuthModal, showSuccessAppointmentModal }) => {
       const headers = {
         "Content-Type": "application/json",
       };
-      const response = await api.post(
+      const response = await apiConfig.post(
         `user/${email}`,
         {
           id: email,
