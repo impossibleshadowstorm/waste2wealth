@@ -14,8 +14,10 @@ export default function Search({ showAuthModal }) {
     if (location !== "Select Location") {
       showAuthModal();
     } else {
-      
       setShowSelectionError(true);
+      setTimeout(() => {
+        setShowSelectionError(false);
+      }, 2000);
     }
   };
 

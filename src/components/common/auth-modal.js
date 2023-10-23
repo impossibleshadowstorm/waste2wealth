@@ -179,9 +179,6 @@ const AuthModal = ({ show, hideAuthModal, showSuccessAppointmentModal }) => {
               </div>
             </div>
           </form>
-          <a class="absolute top-6 right-6" href="#">
-            <Image fill priority alt="" src="/images/close-icon.png" />
-          </a>
         </div>
       </div>
       {snackbar ? <ErrorSnackbar message={"Invalid Email Address."} /> : <></>}

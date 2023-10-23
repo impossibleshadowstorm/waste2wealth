@@ -87,7 +87,7 @@ export const WarningSnackbar = ({ message }) => {
 export const ErrorSnackbar = ({ message }) => {
   return (
     <div class="z-50 fixed left-0 bottom-0 p-4">
-      <div class="max-w-xs p-4 bg-gray-500 rounded-lg shadow">
+      <div class="max-w-xs p-4 bg-white rounded-lg shadow">
         <div class="flex w-full h-full items-center justify-between">
           <div class="flex items-center pr-6">
             <div class="flex-shrink-0 self-start inline-flex items-center justify-center w-10 h-10 mr-3 bg-red-500 bg-opacity-20 rounded-xl">
@@ -104,7 +104,7 @@ export const ErrorSnackbar = ({ message }) => {
                 ></path>
               </svg>
             </div>
-            <span class="text-sm leading-5 text-gray-200 font-semibold">
+            <span class="text-sm leading-5 text-black font-semibold">
               {message}
             </span>
           </div>

@@ -11,14 +11,14 @@ const WhyUs = () => {
       data-component-id="3ccf8f54_05_awz"
       className="relative py-20 overflow-hidden bg-gray-50"
     >
-      <Image
+      {/* <Image
         className="absolute top-0 left-0 -ml-32 md:-ml-0"
         src="/images/circle-left-star.png"
         alt=""
         style={{ objectFit: "contain" }}
         fill
         priority
-      />
+      /> */}
       <div className="relative container px-4 mx-auto">
         <div className="max-w-2xl lg:max-w-5xl mx-auto mb-20 text-center">
           <span className="inline-block py-1 px-3 mb-4 text-xs font-semibold bg-primary text-white rounded-full uppercase">
