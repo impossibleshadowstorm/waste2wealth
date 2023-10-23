@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   // return <header className="h-screen flex item-center bg-red-200" id="footer">Footer</header>;
@@ -15,24 +16,25 @@ export default function Footer() {
           <div class="flex flex-wrap -m-6">
             <div class="w-full md:w-1/2 lg:w-5/12 p-6">
               <div class="flex flex-col justify-between h-full max-w-sm">
-                <div class="mb-11 flex flex-start relative h-[45px] w-[120px]">
-                  <Image
-                    src="/icons/logo-white.svg"
-                    alt=""
-                    data-config-id="auto-img-2-4"
-                    className=""
-                    fill
-                    priority
-                  />
-                </div>
+                <Link href="/">
+                  <div class="mb-11 flex flex-start relative h-[45px] w-[120px]">
+                    <Image
+                      src="/icons/logo-white.svg"
+                      alt=""
+                      data-config-id="auto-img-2-4"
+                      className=""
+                      fill
+                      priority
+                    />
+                  </div>
+                </Link>
                 <div>
                   <p
                     class="mb-14 text-gray-200 text-sm"
                     data-config-id="auto-txt-1-4"
                   >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Pretium dui convallis sagittis tempus mi viverra eget.
-                    Quisque justo, blandit orci.
+                    Turning Trash into Treasure: Our Eco-Friendly Recycling
+                    Platform. Choose, Schedule, Get Paid.
                   </p>
                 </div>
               </div>
@@ -43,44 +45,35 @@ export default function Footer() {
                   class="mb-7 font-heading font-medium text-base text-gray-500 tracking-px"
                   data-config-id="auto-txt-3-4"
                 >
-                  Company
+                  Quick Navigation
                 </h3>
                 <ul>
                   <li class="mb-4">
-                    <a
+                    <Link
                       class="font-heading font-medium text-base text-white hover:text-[#F5D856]"
-                      href="#"
+                      href="/"
                       data-config-id="auto-txt-4-4"
                     >
-                      Features
-                    </a>
+                      Home
+                    </Link>
                   </li>
                   <li class="mb-4">
-                    <a
+                    <Link
                       class="font-heading font-medium text-base text-white hover:text-[#F5D856]"
-                      href="#"
+                      href="/services"
                       data-config-id="auto-txt-5-4"
                     >
-                      Pricing
-                    </a>
+                      Services
+                    </Link>
                   </li>
                   <li class="mb-4">
-                    <a
+                    <Link
                       class="font-heading font-medium text-base text-white hover:text-[#F5D856]"
-                      href="#"
+                      href="/scrap-rates"
                       data-config-id="auto-txt-6-4"
                     >
-                      Affiliate Program
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      class="font-heading font-medium text-base text-white hover:text-[#F5D856]"
-                      href="#"
-                      data-config-id="auto-txt-7-4"
-                    >
-                      Press Kit
-                    </a>
+                      Scrap Rates
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -91,44 +84,26 @@ export default function Footer() {
                   class="mb-7 font-heading font-medium text-base text-gray-500 tracking-px"
                   data-config-id="auto-txt-8-4"
                 >
-                  Support
+                  Company
                 </h3>
                 <ul>
                   <li class="mb-4">
-                    <a
+                    <Link
                       class="font-heading font-medium text-base text-white hover:text-[#F5D856]"
-                      href="#"
+                      href="about-us"
                       data-config-id="auto-txt-9-4"
                     >
-                      Account
-                    </a>
+                      About Us
+                    </Link>
                   </li>
                   <li class="mb-4">
-                    <a
+                    <Link
                       class="font-heading font-medium text-base text-white hover:text-[#F5D856]"
                       href="#"
                       data-config-id="auto-txt-10-4"
                     >
-                      Help
-                    </a>
-                  </li>
-                  <li class="mb-4">
-                    <a
-                      class="font-heading font-medium text-base text-white hover:text-[#F5D856]"
-                      href="#"
-                      data-config-id="auto-txt-11-4"
-                    >
                       Contact Us
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      class="font-heading font-medium text-base text-white hover:text-[#F5D856]"
-                      href="#"
-                      data-config-id="auto-txt-12-4"
-                    >
-                      Customer Support
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -147,13 +122,13 @@ export default function Footer() {
                       class="mb-4 font-heading font-medium text-base text-white"
                       data-config-id="auto-txt-14-4"
                     >
-                      hi@gradia.com
+                      <Link href="mailto:support@w2w.com">support@w2w.com</Link>
                     </li>
                     <li
                       class="font-heading font-medium text-base text-white"
                       data-config-id="auto-txt-15-4"
                     >
-                      +1 (394) 593 1994
+                      <Link href="tel:+918958523246">+91 8958523246</Link>
                     </li>
                   </ul>
                 </div>
@@ -161,12 +136,11 @@ export default function Footer() {
                   <div class="w-auto p-5">
                     <a href="#">
                       <svg
-                        width="14"
-                        height="12"
+                        width="20"
+                        height="20"
                         viewBox="0 0 14 12"
-                        fill="none"
+                        fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg"
-                        data-config-id="auto-svg-1-4"
                       >
                         <path
                           d="M13.6488 1.58924C13.137 1.81672 12.5967 1.9589 12.028 2.0442C12.5967 1.70298 13.0517 1.16271 13.2507 0.508707C12.7105 0.821493 12.1133 1.04897 11.4593 1.19115C10.9475 0.650883 10.2082 0.309662 9.41201 0.309662C7.87652 0.309662 6.62537 1.5608 6.62537 3.0963C6.62537 3.32378 6.65381 3.52283 6.71068 3.72187C4.40744 3.60813 2.33168 2.49916 0.938358 0.793058C0.710877 1.21958 0.568702 1.67455 0.568702 2.18638C0.568702 3.15317 1.0521 4.00622 1.81985 4.51805C1.36488 4.48962 0.938358 4.37588 0.540266 4.17683V4.20527C0.540266 5.57015 1.50706 6.70755 2.78664 6.96347C2.55916 7.02034 2.30324 7.04877 2.04733 7.04877C1.87672 7.04877 1.67767 7.02034 1.50706 6.9919C1.87672 8.10087 2.90038 8.92549 4.12309 8.92549C3.15629 9.6648 1.96202 10.1198 0.654007 10.1198C0.426526 10.1198 0.199046 10.1198 0 10.0913C1.25114 10.8875 2.70133 11.3425 4.2937 11.3425C9.44045 11.3425 12.2555 7.07721 12.2555 3.38065C12.2555 3.26691 12.2555 3.12473 12.2555 3.01099C12.7958 2.64134 13.2792 2.15794 13.6488 1.58924Z"
@@ -178,8 +152,8 @@ export default function Footer() {
                   <div class="w-auto p-5">
                     <a href="#">
                       <svg
-                        width="8"
-                        height="15"
+                        width="20"
+                        height="20"
                         viewBox="0 0 8 15"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
@@ -195,8 +169,8 @@ export default function Footer() {
                   <div class="w-auto p-5">
                     <a href="#">
                       <svg
-                        width="18"
-                        height="17"
+                        width="20"
+                        height="20"
                         viewBox="0 0 18 17"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"

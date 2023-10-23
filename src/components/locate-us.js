@@ -11,7 +11,9 @@ const LocateUs = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className={"2xl:max-w-[1280px] w-full mx-auto flex xl:flex-row lg:flex-row md:flex-row 2xl:flex-row xs:flex-col sm:flex-col gap-8 justify-center items-center"}
+        className={
+          "2xl:max-w-[1280px] w-full mx-auto flex xl:flex-row lg:flex-row md:flex-row 2xl:flex-row xs:flex-col sm:flex-col gap-8 justify-center items-center"
+        }
       >
         {/* First */}
         <motion.div
@@ -26,15 +28,19 @@ const LocateUs = () => {
               <br />
             </h1>
             <h3 className="h3 text-black">
-              Attaining{" "}
-              <span className="text-primary">sustainable solutions</span> with
-              ease.
+              A Tech-Driven{" "}
+              <span className="text-primary">Venture Revolutionizing </span>{" "}
+              Waste Management.
             </h3>
             <p className="description max-w-[550px] mx-auto xl:mx-0 md-6 xl:mb-10 text-black">
-              Trading your waste has never been simpler. Turn your recyclables
-              into cash effortlessly while contributing to a greener planet.
+              Use the map on the right to find our current service locations.
+              The left side hints at our upcoming branches, demonstrating our
+              commitment to expanding our reach, bringing efficient waste
+              management and recycling closer to you. Watch out for new
+              locations as we strive to make waste2wealth accessible to more
+              communities.
             </p>
-            <a
+            {/* <a
               href="#_"
               className="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white  hover:bg-white group w-40 xs:max-md:mt-16"
             >
@@ -42,7 +48,7 @@ const LocateUs = () => {
               <span className="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-black">
                 See Details
               </span>
-            </a>
+            </a> */}
           </div>
         </motion.div>
         {/* Second */}

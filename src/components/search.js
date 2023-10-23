@@ -1,12 +1,23 @@
 "use client";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { SearchContext } from "../context/search";
 import LocationSelection from "./location-selection";
 import DateSelection from "./date-selection";
 import HoursSelection from "./hours-selection";
+import { ErrorSnackbar } from "./common/snackbars";
 
 export default function Search({ showAuthModal }) {
-  const { searchActive } = useContext(SearchContext);
+  const { searchActive, location } = useContext(SearchContext);
+  const [showSelectionError, setShowSelectionError] = useState(false);
+
+  const handleSchedulePickup = () => {
+    if (location !== "Select Location") {
+      showAuthModal();
+    } else {
+      
+      setShowSelectionError(true);
+    }
+  };
 
   return (
     <div
@@ -26,7 +37,7 @@ export default function Search({ showAuthModal }) {
         <HoursSelection />
         <div className="xl:h-full flex items-center px-6 xl:px-2">
           <button
-          onClick={showAuthModal}
+            onClick={handleSchedulePickup}
             className={`${
               searchActive
                 ? "btn btn-sm btn-primary xl:w-[264px]"
@@ -37,6 +48,9 @@ export default function Search({ showAuthModal }) {
           </button>
         </div>
       </div>
+      {showSelectionError && (
+        <ErrorSnackbar message={"Please Select Correct Location..!"} />
+      )}
     </div>
   );
 }

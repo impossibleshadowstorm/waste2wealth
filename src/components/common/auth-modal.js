@@ -4,8 +4,9 @@ import React, { useContext, useState } from "react";
 import { ErrorSnackbar, SuccessSnackbar } from "./snackbars";
 import { SearchContext } from "@/context/search";
 import { api } from "@/api/axios";
+import { FaCross, FaX } from "react-icons/fa6";
 
-const AuthModal = ({ show, hideAuthModal }) => {
+const AuthModal = ({ show, hideAuthModal, showSuccessAppointmentModal }) => {
   const { location, date, hour } = useContext(SearchContext);
 
   const [otpField, setOtpField] = useState({
@@ -34,13 +35,14 @@ const AuthModal = ({ show, hideAuthModal }) => {
       );
 
       if (response.status === 201) {
-        console.log(response.data);
-        // setSentOtp(response?.data?.booking_id);
+        showSuccessAppointmentModal(true);
 
-        setSuccessSnackbar(true);
-        setTimeout(() => {
-          setSuccessSnackbar(false);
-        }, 2000);
+        setOtp("");
+        setEmail("");
+        setOtpField({
+          btnText: "Send OTP",
+          fieldVisible: false,
+        });
 
         hideAuthModal();
       }
@@ -78,7 +80,6 @@ const AuthModal = ({ show, hideAuthModal }) => {
       );
 
       if (response.status === 201) {
-        console.log(response.data);
         setSentOtp(response?.data?.booking_id);
 
         setSuccessSnackbar(true);
@@ -104,15 +105,17 @@ const AuthModal = ({ show, hideAuthModal }) => {
     >
       <div class="p-4 max-w-xl w-full">
         <div class="relative p-6 py-11 bg-black rounded-5xl">
-          <div className="relative h-[60px] w-[125px]">
-            <Image
-              fill
-              priority
-              class=""
-              src="icons/logo-white.svg"
-              alt=""
+          <div className="flex justify-between">
+            <div className="relative h-[60px] w-[125px]">
+              <Image fill priority class="" src="icons/logo-white.svg" alt="" />
+            </div>
+            <div
               onClick={hideAuthModal}
-            />
+              className="relative h-[30px] flex items-center text-gray-400 font-bold justify-center text-lg cursor-pointer"
+            >
+              <span className="pr-2">Close</span>{" "}
+              <FaX className="text-[15px] font-bold" />
+            </div>
           </div>
           <h3 class="mb-4 text-3xl font-medium text-white text-center tracking-3xl">
             Authenticate
@@ -152,6 +155,9 @@ const AuthModal = ({ show, hideAuthModal }) => {
                       placeholder="OTP"
                     />
                   </div>
+                  <div className="w-full text-center text-[red]">
+                    * Please Check Your Spam Folder Also.
+                  </div>
                 </div>
               )}
               <div class="w-full p-2">
@@ -178,10 +184,9 @@ const AuthModal = ({ show, hideAuthModal }) => {
           </a>
         </div>
       </div>
-      {/* <ErrorSnackbar message={snackbar.message} /> */}
       {snackbar ? <ErrorSnackbar message={"Invalid Email Address."} /> : <></>}
       {successSnackbar ? (
-        <SuccessSnackbar message={"Email Sent Successful"} />
+        <SuccessSnackbar message={"OTP Sent Successfully...!!"} />
       ) : (
         <></>
       )}

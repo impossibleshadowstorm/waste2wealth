@@ -132,7 +132,7 @@ export default function Header() {
             Scrap Rates
           </Link>
           <Link
-            href="careers"
+            href="contact-us"
             className={`cursor-pointer ${
               nav ? "" : "text-white hover:text-[#F5D856]"
             }`}
@@ -140,7 +140,7 @@ export default function Header() {
             smooth={desktopMode}
             spy={true}
           >
-            Careers
+            Contact Us
           </Link>
           <Link
             href=""

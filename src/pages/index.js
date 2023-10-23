@@ -14,10 +14,11 @@ import AppreciatedBy from "@/components/appreciated-by";
 import Stats from "@/components/stats";
 import AuthModal from "@/components/common/auth-modal";
 import { useState } from "react";
+import { SuccessfulAppointmentModal } from "@/components/common/snackbars";
 
 export default function Home() {
   const [show, setShow] = useState(false);
-  
+  const [showSuccessAppointment, setShowSuccessAppointment] = useState(false);
 
   const hideAuthModal = () => {
     setShow(false);
@@ -26,14 +27,23 @@ export default function Home() {
   const showAuthModal = () => {
     setShow(true);
   };
+  const hideSuccessAppointmentModal = () => {
+    setShowSuccessAppointment(false);
+  };
+
+  const showSuccessAppointmentModal = () => {
+    setShowSuccessAppointment(true);
+  };
 
   return (
     <>
-      <Hero showAuthModal={showAuthModal} />
+      <Hero
+        showAuthModal={showAuthModal}
+      />
       <div className="lg:h-[90px] w-[100vw] bg-[#000]"></div>
       <HowWeWork />
       {/* <GetStarted /> */}
-      <div className="h-[90px] w-[100vw] bg-[#000]"></div>
+      <div className="h-[90px] w-[100vw] bg-[#0E0E0E]"></div>
       <AppreciatedBy />
       <Services />
       <TrustedPartner />
@@ -43,7 +53,15 @@ export default function Home() {
       <ContactUs />
       {/* <Cta />
       <BackToTopBtn /> */}
-      <AuthModal show={show} hideAuthModal={hideAuthModal} />
+      <AuthModal show={show} hideAuthModal={hideAuthModal} showSuccessAppointmentModal={showSuccessAppointmentModal}/>
+      <SuccessfulAppointmentModal
+        show={showSuccessAppointment}
+        hideModal={hideSuccessAppointmentModal}
+        title={"Appointment Scheduled"}
+        description={
+          "Our Representative will call you before pickup on your selected date. Check your Mail for more details."
+        }
+      />
       {/* {show && <AuthModal show={show} hideAuthModal={hideAuthModal} />} */}
     </>
   );
