@@ -60,6 +60,7 @@ const ContactUs = () => {
       console.log(error);
     }
   };
+  
   return (
     <section className="bg-white py-10 md:py-16">
       <div className="container max-w-screen-xl mx-auto px-4 xl:relative">
