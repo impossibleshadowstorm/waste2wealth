@@ -9,12 +9,15 @@ import HowWeWork from "@/components/how-we-work";
 import AppreciatedBy from "@/components/appreciated-by";
 import Stats from "@/components/stats";
 import AuthModal from "@/components/common/auth-modal";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { SuccessfulAppointmentModal } from "@/components/common/snackbars";
+import { SearchContext } from "@/context/search";
 
 export default function Home() {
-  const [show, setShow] = useState(false);
+  // const [show, setShow] = useState(false);
   const [showSuccessAppointment, setShowSuccessAppointment] = useState(false);
+
+  const { show, setShow } = useContext(SearchContext);
 
   const hideAuthModal = () => {
     setShow(false);
@@ -33,9 +36,7 @@ export default function Home() {
 
   return (
     <>
-      <Hero
-        showAuthModal={showAuthModal}
-      />
+      <Hero showAuthModal={showAuthModal} />
       <div className="lg:h-[90px] w-[100vw] bg-[#09311A]"></div>
       <HowWeWork />
       {/* <div className="h-[90px] w-[100vw] bg-[#09311A]"></div> */}
@@ -46,7 +47,11 @@ export default function Home() {
       <Stats />
       <WhyUs />
       <ContactUs />
-      <AuthModal show={show} hideAuthModal={hideAuthModal} showSuccessAppointmentModal={showSuccessAppointmentModal}/>
+      <AuthModal
+        show={show}
+        hideAuthModal={hideAuthModal}
+        showSuccessAppointmentModal={showSuccessAppointmentModal}
+      />
       <SuccessfulAppointmentModal
         show={showSuccessAppointment}
         hideModal={hideSuccessAppointmentModal}

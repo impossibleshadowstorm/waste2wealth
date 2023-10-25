@@ -18,7 +18,7 @@ export default function Services() {
           <motion.div
             variants={fadeIn("down", "tween", 0.2, 1)}
             className={
-              "flex-1 flex justify-center items-center  bg-[] relative xs:max-md:my-8"
+              "flex-1 flex justify-center items-center relative xs:max-md:my-8"
             }
           >
             <div className="absolute">

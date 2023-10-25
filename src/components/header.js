@@ -57,7 +57,7 @@ export default function Header() {
         <div className="flex justify-between items-center px-4">
           <Link href="/" className="cursor-pointer">
             <Image
-              src={nav ? "/icons/primary-logo.svg" : "/icons/logo-white.svg"}
+              src={nav ? "/icons/logo-new.svg" : "/icons/logo-white.svg"}
               width={194}
               height={64}
               alt="Logo"

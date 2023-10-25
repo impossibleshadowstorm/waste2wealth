@@ -19,7 +19,7 @@ const TrustedPartner = () => {
           {/* First Div */}
           <motion.div
             variants={fadeIn("down", "tween", 0.2, 1)}
-            className="md:flex-1 flex flex-row xs:max-sm:flex-col xs:max-sm:px-0 justify-evenly items-center mx-0 px-0 z-20 bg-[transparent]"
+            className="md:flex-1 flex flex-row xs:max-sm:flex-col xs:max-sm:px-0 justify-evenly items-center mx-0 px-0 z-20 bg-[transparent] hidden sm:block"
           >
             <div className="grid grid-cols-4 gap-3 w-full relative">
               <div className="row-span-1 bg-[transparent] rounded-md h-20"></div>
@@ -165,7 +165,7 @@ const TrustedPartner = () => {
           >
             <div className="text-center xl:max-w-xl xl:text-left mt-16 xl:mt-0 z-10">
               <h1 className="h1 text-white">
-                We Believe in
+                We{"'"}re Believed by
                 <br />
               </h1>
               <h3 className="h3 text-white">
@@ -176,8 +176,8 @@ const TrustedPartner = () => {
                 Trading your waste has never been simpler. Turn your recyclables
                 into cash effortlessly while contributing to a greener planet.
               </p>
-              <p className="description max-w-[550px] mx-auto xl:mx-0 md-6 xl:mb-10 text-white md:hidden">
-                Companies name for The Mobile view hidden
+              <p className="description max-w-[550px] mx-auto xl:mx-0 mt-6 xl:mb-10 text-white md:hidden">
+                Reliance, Hershey, ICICI Bank, L&T, Paytm, Godrej, Domino{"'"}s, etc..
               </p>
               {/* <a
                 href="#_"

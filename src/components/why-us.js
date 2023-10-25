@@ -50,7 +50,7 @@ const WhyUs = () => {
                 Discover unbeatable rates for your scrap through our extensive network of trusted recyclers.
                 </p>
               </div>
-              <div className="text-center">
+              <div className="text-center relative flex justify-center items-center">
               <FaDollarSign className="text-8xl"/>
               </div>
             </div>
@@ -63,7 +63,7 @@ const WhyUs = () => {
                 Your Scrap, Your Schedule. Enjoy the convenience of doorstep pickup at a time and date that suits you best.
                 </p>
               </div>
-              <div className="text-center">
+              <div className="text-center relative flex justify-center items-center">
               <FaTruck className="text-8xl"/>
               </div>
             </div>
