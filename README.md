@@ -1,6 +1,6 @@
 # Waste2Wealth
 
-![Waste2Wealth](link-to-your-logo-image)
+![Waste2Wealth](landing.png)
 
 Welcome to **Waste2Wealth** – an innovative venture driven by technology and recognized under Start-up India. We're committed to transforming the way waste is managed and creating valuable opportunities for a sustainable future.
 
