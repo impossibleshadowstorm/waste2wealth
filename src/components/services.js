@@ -83,7 +83,7 @@ export default function Services() {
                   </div>
                   <div className="mt-8 ">
                     <p className="text-xl font-semibold my-2 group-hover:text-white text-[#38685B]">
-                      For Organization
+                      For Individuals
                     </p>
                     <div className="flex space-x-2 text-gray-400 text-sm my-2 ">
                       <svg
@@ -107,7 +107,7 @@ export default function Services() {
                         />
                       </svg>
                       <p className="group-hover:text-white font-semibold text-primary">
-                        Marketing Team
+                        Zero Waste Solutions
                       </p>
                     </div>
 
@@ -116,9 +116,9 @@ export default function Services() {
                     <div className="flex justify-between">
                       <div className="my-2">
                         <p className=" text-sm text-primary group-hover:text-white">
-                          The Kabadiwala as a registered PRO, official
-                          collection & recycling partner helps in the compliance
-                          process of EPR. free pickup of 40+ recyclables.
+                          We provides easy Scrap Collection, helps societies
+                          achieve zero-waste goals, and offers sustainable
+                          Vehicle Scrapping Services for individual customers.
                         </p>
                       </div>
                     </div>
@@ -170,7 +170,7 @@ export default function Services() {
                         />
                       </svg>
                       <p className="group-hover:text-white font-semibold text-primary">
-                        Marketing Team
+                        Comprehensive Organization Solutions
                       </p>
                     </div>
 
@@ -179,9 +179,10 @@ export default function Services() {
                     <div className="flex justify-between">
                       <div className="my-2">
                         <p className="text-sm text-primary group-hover:text-white">
-                          The Kabadiwala as a registered PRO, official
-                          collection & recycling partner helps in the compliance
-                          process of EPR. free pickup of 40+ recyclables.
+                          Waste2Wealth provides EPR compliance, secure Paper
+                          Shredding, Circular Economy planning, Zero Waste
+                          solutions, Dismantling, CRS campaigns, MRF
+                          collaboration, and innovative IEC for organizations.
                         </p>
                       </div>
                     </div>
@@ -212,7 +213,7 @@ export default function Services() {
                 </div>
                 <div className="mt-8 ">
                   <p className="text-xl font-semibold my-2 group-hover:text-white text-[#38685B]">
-                    For Organization
+                    For Government
                   </p>
                   <div className="flex space-x-2 text-gray-400 text-sm my-2 ">
                     <svg
@@ -236,7 +237,7 @@ export default function Services() {
                       />
                     </svg>
                     <p className="group-hover:text-white font-semibold text-primary">
-                      Marketing Team
+                      Government Solutions
                     </p>
                   </div>
 
@@ -245,9 +246,10 @@ export default function Services() {
                   <div className="flex justify-between">
                     <div className="my-2">
                       <p className=" text-sm text-primary group-hover:text-white">
-                        The Kabadiwala as a registered PRO, official collection
-                        & recycling partner helps in the compliance process of
-                        EPR. free pickup of 40+ recyclables.
+                        For government clients, we collaborate on Material
+                        Recovery Facilities, ensuring efficient waste
+                        management. Our IEC campaigns drive behavioral change in
+                        the community.
                       </p>
                     </div>
                   </div>

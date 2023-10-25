@@ -5,7 +5,7 @@ import { useState } from "react";
 import ScheduledPickupModal from "./about-us/scheduledPickupModal";
 
 export default function Footer() {
-  const [checkScheduledPickup, setCheckScheduledPickup] = useState(true);
+  const [checkScheduledPickup, setCheckScheduledPickup] = useState(false);
   const [verified, setVerified] = useState(false);
 
   return (

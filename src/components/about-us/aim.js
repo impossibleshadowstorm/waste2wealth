@@ -23,12 +23,15 @@ const Aim = () => {
                 Our Aim
               </span>
               <h2 className="mt-4 mb-6 text-2xl font-bold dark:text-black">
-                We are the large business expert in Europe and Asia
+                Let{"'"} Recycle Everything
               </h2>
               <p className="mb-10 text-gray-800">
-                Lorem ipsum dor amet Lorem ipsum dor amet is a dummy text .Lorem
-                ipsum dor amet isopinus ipaino amet Lorem ipsum dor amet is a
-                dummy text
+                We{"'"}re on a mission to revolutionize the way we look at waste.
+                Our goal is simple but impactful: to create a cleaner,
+                waste-free India by recycling every bit of dry scrap. We believe
+                this shift in perspective can lead to a more sustainable,
+                eco-friendly, and prosperous world. Join us in this vital
+                journey to preserve our planet and transform waste into wealth.
               </p>
             </div>
           </div>

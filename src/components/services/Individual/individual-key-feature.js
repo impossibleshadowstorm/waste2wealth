@@ -105,7 +105,7 @@ const IndividualKeyFeature = () => {
               </div>
             </div>
             <div className="w-full lg:w-1/6 xl:w-auto mx-auto px-4 xl:mr-20 mb-16 lg:mb-0">
-              <div className="relative bg-[red] h-[500px] w-[20vw]">
+              <div className="relative h-[500px] w-[20vw]">
                 <Image
                   className=""
                   src="/images/benefit2.jpg"
