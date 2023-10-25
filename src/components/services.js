@@ -60,9 +60,9 @@ export default function Services() {
           {/* Second Div */}
           <motion.div
             variants={fadeIn("down", "tween", 0.2, 1)}
-            className="flex-1 flex flex-row xs:max-sm:flex-col xs:max-sm:px-0 justify-evenly items-center px-8 z-20 xs:max-md:my-16"
+            className="flex-1 flex sm:flex-row flex-col xs:max-sm:px-0 justify-evenly items-center px-8 z-20 xs:max-md:my-16"
           >
-            <div className="w-1/2">
+            <div className="md:w-1/2 w-full">
               <div className="flex justify-center items-center">
                 <div className="relative bg-white py-6 px-6 w-full my-4 shadow-xl hover:bg-[#38685B] group">
                   <div className="text-white flex items-center absolute rounded-full py-4 px-4 shadow-xl bg-[#38685B] left-4 -top-6">
@@ -193,7 +193,7 @@ export default function Services() {
             <div className="w-16"></div>
 
             {/* third card */}
-            <div className="flex justify-center items-center w-1/2">
+            <div className="flex justify-center items-center md:w-1/2 w-full">
               <div className="relative bg-white py-6 px-6 w-full my-4 shadow-xl hover:bg-[#38685B] group">
                 <div className=" text-white flex items-center absolute rounded-full py-4 px-4 shadow-xl bg-[#38685B] left-4 -top-6">
                   <svg

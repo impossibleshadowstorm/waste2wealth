@@ -13,13 +13,13 @@ const TrustedPartner = () => {
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
           className={
-            "2xl:max-w-[1280px] w-full mx-auto flex xl:flex-row lg:flex-row md:flex-row 2xl:flex-row xs:flex-col sm:flex-col gap-8 justify-center items-center"
+            "2xl:max-w-[1280px] w-full mx-auto flex md:flex-row flex-col gap-8 justify-center items-center"
           }
         >
           {/* First Div */}
           <motion.div
             variants={fadeIn("down", "tween", 0.2, 1)}
-            className="md:flex-1 flex flex-row xs:max-sm:flex-col xs:max-sm:px-0 justify-evenly items-center mx-0 px-0 z-20 bg-[transparent] hidden sm:block"
+            className="md:flex-1 flex flex-row xs:max-sm:flex-col xs:max-sm:px-0 justify-evenly items-center mx-0 px-0 z-20 bg-[transparent] hidden md:block"
           >
             <div className="grid grid-cols-4 gap-3 w-full relative">
               <div className="row-span-1 bg-[transparent] rounded-md h-20"></div>
