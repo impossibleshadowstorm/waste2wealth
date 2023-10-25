@@ -68,7 +68,7 @@ export const normalRecyclableScrapData = [
 ];
 export const largeAppliancesScrapData = [
   {
-    title: "Pen Paper",
+    title: "SPLIT AC 1.5 TON ",
     rate: "10 / KG",
     image: "https://www.dropbox.com/s/3e0m3ttp2tdi1ly/chair.png?dl=1",
   },
