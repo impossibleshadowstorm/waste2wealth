@@ -4,20 +4,20 @@ import Link from "next/link";
 export default function Footer() {
   // return <header className="h-screen flex item-center bg-red-200" id="footer">Footer</header>;
   return (
-    <div class="" id="content">
+    <div className="" id="content">
       <section
         data-section-id="1"
         data-share=""
         data-category="footers"
         data-component-id="7fd1b1dd_04_awz"
-        class="relative py-24 bg-black overflow-hidden"
+        className="relative py-24 bg-black overflow-hidden"
       >
-        <div class="relative z-10 container mx-auto px-4">
-          <div class="flex flex-wrap -m-6">
-            <div class="w-full md:w-1/2 lg:w-5/12 p-6">
-              <div class="flex flex-col justify-between h-full max-w-sm">
+        <div className="relative z-10 container mx-auto px-4">
+          <div className="flex flex-wrap -m-6">
+            <div className="w-full md:w-1/2 lg:w-5/12 p-6">
+              <div className="flex flex-col justify-between h-full max-w-sm">
                 <Link href="/">
-                  <div class="mb-11 flex flex-start relative h-[45px] w-[120px]">
+                  <div className="mb-11 flex flex-start relative h-[45px] w-[120px]">
                     <Image
                       src="/icons/logo-white.svg"
                       alt=""
@@ -30,7 +30,7 @@ export default function Footer() {
                 </Link>
                 <div>
                   <p
-                    class="mb-14 text-gray-200 text-sm"
+                    className="mb-14 text-gray-200 text-sm"
                     data-config-id="auto-txt-1-4"
                   >
                     Turning Trash into Treasure: Our Eco-Friendly Recycling
@@ -39,36 +39,36 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-            <div class="w-full md:w-1/2 lg:w-2/12 p-6">
-              <div class="h-full">
+            <div className="w-full md:w-1/2 lg:w-2/12 p-6">
+              <div className="h-full">
                 <h3
-                  class="mb-7 font-heading font-medium text-base text-gray-500 tracking-px"
+                  className="mb-7 font-heading font-medium text-base text-gray-500 tracking-px"
                   data-config-id="auto-txt-3-4"
                 >
                   Quick Navigation
                 </h3>
                 <ul>
-                  <li class="mb-4">
+                  <li className="mb-4">
                     <Link
-                      class="font-heading font-medium text-base text-white hover:text-[#F5D856]"
+                      className="font-heading font-medium text-base text-white hover:text-[#F5D856]"
                       href="/"
                       data-config-id="auto-txt-4-4"
                     >
                       Home
                     </Link>
                   </li>
-                  <li class="mb-4">
+                  <li className="mb-4">
                     <Link
-                      class="font-heading font-medium text-base text-white hover:text-[#F5D856]"
+                      className="font-heading font-medium text-base text-white hover:text-[#F5D856]"
                       href="/services"
                       data-config-id="auto-txt-5-4"
                     >
                       Services
                     </Link>
                   </li>
-                  <li class="mb-4">
+                  <li className="mb-4">
                     <Link
-                      class="font-heading font-medium text-base text-white hover:text-[#F5D856]"
+                      className="font-heading font-medium text-base text-white hover:text-[#F5D856]"
                       href="/scrap-rates"
                       data-config-id="auto-txt-6-4"
                     >
@@ -78,27 +78,27 @@ export default function Footer() {
                 </ul>
               </div>
             </div>
-            <div class="w-full md:w-1/2 lg:w-2/12 p-6">
-              <div class="h-full">
+            <div className="w-full md:w-1/2 lg:w-2/12 p-6">
+              <div className="h-full">
                 <h3
-                  class="mb-7 font-heading font-medium text-base text-gray-500 tracking-px"
+                  className="mb-7 font-heading font-medium text-base text-gray-500 tracking-px"
                   data-config-id="auto-txt-8-4"
                 >
                   Company
                 </h3>
                 <ul>
-                  <li class="mb-4">
+                  <li className="mb-4">
                     <Link
-                      class="font-heading font-medium text-base text-white hover:text-[#F5D856]"
+                      className="font-heading font-medium text-base text-white hover:text-[#F5D856]"
                       href="about-us"
                       data-config-id="auto-txt-9-4"
                     >
                       About Us
                     </Link>
                   </li>
-                  <li class="mb-4">
+                  <li className="mb-4">
                     <Link
-                      class="font-heading font-medium text-base text-white hover:text-[#F5D856]"
+                      className="font-heading font-medium text-base text-white hover:text-[#F5D856]"
                       href="#"
                       data-config-id="auto-txt-10-4"
                     >
@@ -108,32 +108,32 @@ export default function Footer() {
                 </ul>
               </div>
             </div>
-            <div class="w-full md:w-1/2 lg:w-3/12 p-6">
-              <div class="flex flex-col justify-between h-full">
+            <div className="w-full md:w-1/2 lg:w-3/12 p-6">
+              <div className="flex flex-col justify-between h-full">
                 <div>
                   <h3
-                    class="mb-7 font-heading font-medium text-base text-gray-500 tracking-px"
+                    className="mb-7 font-heading font-medium text-base text-gray-500 tracking-px"
                     data-config-id="auto-txt-13-4"
                   >
                     Contact Info
                   </h3>
-                  <ul class="mb-6">
+                  <ul className="mb-6">
                     <li
-                      class="mb-4 font-heading font-medium text-base text-white"
+                      className="mb-4 font-heading font-medium text-base text-white"
                       data-config-id="auto-txt-14-4"
                     >
                       <Link href="mailto:support@w2w.com">support@w2w.com</Link>
                     </li>
                     <li
-                      class="font-heading font-medium text-base text-white"
+                      className="font-heading font-medium text-base text-white"
                       data-config-id="auto-txt-15-4"
                     >
                       <Link href="tel:+918958523246">+91 8958523246</Link>
                     </li>
                   </ul>
                 </div>
-                <div class="flex flex-wrap items-center -ml-5">
-                  <div class="w-auto p-5">
+                <div className="flex flex-wrap items-center -ml-5">
+                  <div className="w-auto p-5">
                     <a href="#">
                       <svg
                         width="20"
@@ -149,7 +149,7 @@ export default function Footer() {
                       </svg>
                     </a>
                   </div>
-                  <div class="w-auto p-5">
+                  <div className="w-auto p-5">
                     <a href="#">
                       <svg
                         width="20"
@@ -166,7 +166,7 @@ export default function Footer() {
                       </svg>
                     </a>
                   </div>
-                  <div class="w-auto p-5">
+                  <div className="w-auto p-5">
                     <a href="#">
                       <svg
                         width="20"
@@ -195,14 +195,14 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div class="inline-flex items-center justify-center w-full">
-            <hr class="w-full h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
-            <span class="absolute px-3 font-medium text-gray-900 -translate-x-1/2 bg-white left-1/2 dark:text-white dark:bg-gray-900">
+          <div className="inline-flex items-center justify-center w-full">
+            <hr className="w-full h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+            <span className="absolute px-3 font-medium text-gray-900 -translate-x-1/2 bg-white left-1/2 dark:text-white dark:bg-gray-900">
               W2W
             </span>
           </div>
           <p
-            class="text-gray-400 text-sm text-center"
+            className="text-gray-400 text-sm text-center"
             data-config-id="auto-txt-2-4"
           >
             © Copyright 2023. All Rights Reserved by Waste2Wealth.

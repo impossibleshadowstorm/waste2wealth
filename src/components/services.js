@@ -46,7 +46,7 @@ export default function Services() {
                 Trading your waste has never been simpler. Turn your recyclables
                 into cash effortlessly while contributing to a greener planet.
               </p>
-              <a
+              {/* <a
                 href="#_"
                 className="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white  hover:bg-white group w-40 xs:max-md:mt-16"
               >
@@ -54,7 +54,7 @@ export default function Services() {
                 <span className="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-black">
                   See Details
                 </span>
-              </a>
+              </a> */}
             </div>
           </motion.div>
           {/* Second Div */}
