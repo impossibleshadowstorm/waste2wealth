@@ -4,7 +4,7 @@ import React, { useContext, useState } from "react";
 import { ErrorSnackbar, SuccessSnackbar } from "./snackbars";
 import { SearchContext } from "@/context/search";
 import { apiConfig } from "@/api/api-config";
-import { FaCross, FaX } from "react-icons/fa6";
+import { FaX } from "react-icons/fa6";
 
 const AuthModal = ({ show, hideAuthModal, showSuccessAppointmentModal }) => {
   const { location, date, hour } = useContext(SearchContext);
@@ -64,20 +64,13 @@ const AuthModal = ({ show, hideAuthModal, showSuccessAppointmentModal }) => {
     }
 
     try {
-      const headers = {
-        "Content-Type": "application/json",
-      };
-      const response = await apiConfig.post(
-        `user/${email}`,
-        {
-          id: email,
-          phone: 7261854534,
-          location: location,
-          date: date[0].startDate,
-          hour: hour,
-        },
-        headers
-      );
+      const response = await apiConfig.post(`user/${email}`, {
+        id: email,
+        phone: 7261854534,
+        location: location,
+        date: date[0].startDate,
+        hour: hour,
+      });
 
       if (response.status === 201) {
         setSentOtp(response?.data?.booking_id);
@@ -107,7 +100,13 @@ const AuthModal = ({ show, hideAuthModal, showSuccessAppointmentModal }) => {
         <div className="relative p-6 py-11 bg-black rounded-5xl">
           <div className="flex justify-between">
             <div className="relative h-[60px] w-[125px]">
-              <Image fill priority className="" src="icons/logo-white.svg" alt="" />
+              <Image
+                fill
+                priority
+                className=""
+                src="icons/logo-white.svg"
+                alt=""
+              />
             </div>
             <div
               onClick={hideAuthModal}
