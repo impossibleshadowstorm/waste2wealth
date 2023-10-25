@@ -98,7 +98,7 @@ const ContactUs = () => {
 
           <motion.div
             variants={fadeIn("left", "tween", 0.2, 1)}
-            className=" md:block bg-white xl:relative px-6 py-3 rounded-3xl"
+            className=" md:block bg-white xl:relative px-6 py-3 bg-[red] box-border rounded-3xl lg:w-[30vw] w-[80vw]"
           >
             <div className="py-3">
               <h3 className="font-semibold text-gray-900 text-3xl">
@@ -112,7 +112,7 @@ const ContactUs = () => {
                 placeholder="Full Name"
                 value={fullName}
                 onChange={(e) => setFullName(e.target.value)}
-                className="px-4 py-4 w-96 bg-gray-100 placeholder-gray-400 rounded-xl outline-none"
+                className="px-4 py-4 md:w-90 w-full bg-gray-100 placeholder-gray-400 rounded-xl outline-none"
               />
             </div>
 
@@ -122,7 +122,7 @@ const ContactUs = () => {
                 placeholder="Email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="px-4 py-4 w-96 bg-gray-100 placeholder-gray-400 rounded-xl outline-none"
+                className="px-4 py-4 md:w-90 w-full bg-gray-100 placeholder-gray-400 rounded-xl outline-none"
               />
             </div>
 
@@ -132,7 +132,7 @@ const ContactUs = () => {
                 placeholder="Mobile Number"
                 value={mobile}
                 onChange={(e) => setMobile(e.target.value)}
-                className="px-4 py-4 w-96 bg-gray-100 font-normal text-lg placeholder-gray-400 rounded-xl outline-none [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                className="px-4 py-4 md:w-90 w-full bg-gray-100 font-normal text-lg placeholder-gray-400 rounded-xl outline-none [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
               />
             </div>
 
@@ -142,7 +142,7 @@ const ContactUs = () => {
                 placeholder="Message"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                className="px-4 py-4 w-96 bg-gray-100 placeholder-gray-400 rounded-xl outline-none"
+                className="px-4 py-4 md:w-90 w-full bg-gray-100 placeholder-gray-400 rounded-xl outline-none"
               />
             </div>
 

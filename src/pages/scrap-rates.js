@@ -4,7 +4,7 @@ import { normalRecyclableScrapData, largeAppliancesScrapData, smallAppliancesScr
 
 const ScrapeRates = () => {
   return (
-    <section className="bg-primary mx-auto p-10 md:py-20 px-0 md:p-20 md:px-0">
+    <section className="bg-primary mx-auto p-10 md:py-20 py-20 px-0 md:p-20 md:px-0">
       {/* Normal Recyclables */}
       <div>
         <div className="max-w-2xl mx-auto text-center mb-16">

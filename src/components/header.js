@@ -84,6 +84,7 @@ export default function Header() {
         >
           <Link
             href="/"
+            onClick={() => setNav(!nav)}
             className={`cursor-pointer ${
               nav ? "" : "text-white hover:text-[#F5D856]"
             }`}
@@ -92,6 +93,7 @@ export default function Header() {
           </Link>
           <Link
             href="services"
+            onClick={() => setNav(!nav)}
             className={`cursor-pointer ${
               nav ? "" : "text-white hover:text-[#F5D856]"
             }`}
@@ -100,6 +102,7 @@ export default function Header() {
           </Link>
           <Link
             href="about-us"
+            onClick={() => setNav(!nav)}
             className={`cursor-pointer ${
               nav ? "" : "text-white hover:text-[#F5D856]"
             }`}
@@ -108,6 +111,7 @@ export default function Header() {
           </Link>
           <Link
             href="scrap-rates"
+            onClick={() => setNav(!nav)}
             className={`cursor-pointer ${
               nav ? "" : "text-white hover:text-[#F5D856]"
             }`}
@@ -116,6 +120,7 @@ export default function Header() {
           </Link>
           <Link
             href="contact-us"
+            onClick={() => setNav(!nav)}
             className={`cursor-pointer ${
               nav ? "" : "text-white hover:text-[#F5D856]"
             }`}
@@ -124,7 +129,8 @@ export default function Header() {
           </Link>
           <Link
             href=""
-            className="xl:hidden btn btn-primary btn-sm max-w-[164px] mx-auto"
+            onClick={() => setNav(!nav)}
+            className="hidden btn btn-primary btn-sm max-w-[164px] mx-auto"
           >
             Sell Scrapes
           </Link>
