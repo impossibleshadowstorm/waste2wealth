@@ -1,8 +1,13 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
+import ScheduledPickupModal from "./about-us/scheduledPickupModal";
 
 export default function Footer() {
-  // return <header className="h-screen flex item-center bg-red-200" id="footer">Footer</header>;
+  const [checkScheduledPickup, setCheckScheduledPickup] = useState(true);
+  const [verified, setVerified] = useState(false);
+
   return (
     <div className="" id="content">
       <section
@@ -29,13 +34,18 @@ export default function Footer() {
                   </div>
                 </Link>
                 <div>
-                  <p
-                    className="mb-14 text-gray-200 text-sm"
-                    data-config-id="auto-txt-1-4"
-                  >
+                  <p className="mb-14 text-gray-200 text-sm">
                     Turning Trash into Treasure: Our Eco-Friendly Recycling
                     Platform. Choose, Schedule, Get Paid.
                   </p>
+                  <div>
+                    <span
+                      onClick={() => setCheckScheduledPickup(true)}
+                      className="px-6 py-3 bg-primary text-white hover:bg-white hover:text-black rounded-md cursor-pointer font-semibold"
+                    >
+                      Check Pickup
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -99,7 +109,7 @@ export default function Footer() {
                   <li className="mb-4">
                     <Link
                       className="font-heading font-medium text-base text-white hover:text-[#F5D856]"
-                      href="#"
+                      href="contact-us"
                       data-config-id="auto-txt-10-4"
                     >
                       Contact Us
@@ -209,6 +219,14 @@ export default function Footer() {
           </p>
         </div>
       </section>
+      {/* <PickupAuthModal /> */}
+      {checkScheduledPickup && (
+        <ScheduledPickupModal
+          setCheckScheduledPickup={setCheckScheduledPickup}
+          verified={verified}
+          setVerified={setVerified}
+        />
+      )}
     </div>
   );
 }

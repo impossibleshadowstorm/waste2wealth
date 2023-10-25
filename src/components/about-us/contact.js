@@ -1,6 +1,65 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
+import { FaCheck } from "react-icons/fa6";
+import { ErrorSnackbar, SuccessSnackbar } from "../common/snackbars";
+import { apiConfig } from "@/api/api-config";
 
 const Contact = () => {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [mobile, setMobile] = useState("");
+  const [message, setMessage] = useState("");
+  const [contactFormSuccess, setContactFormSuccess] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const handleContactForm = async (e) => {
+    e.preventDefault();
+    try {
+      const emailRegex = /\S+@\S+\.\S+/;
+
+      if (email === "" || !emailRegex.test(email)) {
+        setErrorMessage("Invalid Email");
+
+        setTimeout(() => {
+          setErrorMessage("");
+        }, 2000);
+        return;
+      } else if (message.length <= 10) {
+        setErrorMessage("Message Length should be a least 10..!");
+
+        setTimeout(() => {
+          setErrorMessage("");
+        }, 2000);
+        return;
+      } else if (mobile.length != 10) {
+        setErrorMessage("Mobile Number should be of 10 Length..!");
+
+        setTimeout(() => {
+          setErrorMessage("");
+        }, 2000);
+        return;
+      }
+      const body = {
+        email: email,
+        phone: mobile,
+        name: `${firstName} ${lastName}`,
+        message: message,
+      };
+      const response = await apiConfig.post(`user/contactUs/${email}`, body);
+
+      if (response.status === 201) {
+        setContactFormSuccess(true);
+        setTimeout(() => {
+          setContactFormSuccess(false);
+        }, 2000);
+      }
+    } catch (error) {
+      setErrorMessage("Error Submitting Data..!!");
+      console.log(error);
+    }
+  };
+
   return (
     <>
       {/* Second Contact */}
@@ -33,7 +92,7 @@ const Contact = () => {
             <div className="relative container px-4 mx-auto">
               {/* IMGAE */}
               <div className="-mt-60 relative z-10 lg:ml-auto max-w-xl p-8 bg-gray-900 border border-gray-800 rounded-xl">
-                <form action="">
+                <form action="" onSubmit={handleContactForm}>
                   <div className="flex flex-wrap -mx-4 mb-8 items-center">
                     <div className="w-full md:w-1/2 px-4 mb-4">
                       <label
@@ -46,6 +105,8 @@ const Contact = () => {
                         className="py-2 px-4 h-11 w-full text-gray-500 placeholder-gray-500 bg-gray-800 border border-gray-700 focus:border-yellowGreen-800 rounded-md outline-none ring ring-transparent focus:ring-yellowGreen-800"
                         type="text"
                         id="first_name"
+                        value={firstName}
+                        onChange={(e) => setFirstName(e.target.value)}
                         placeholder="First name"
                       />
                     </div>
@@ -60,6 +121,8 @@ const Contact = () => {
                         className="py-2 px-4 h-11 w-full text-gray-500 placeholder-gray-500 bg-gray-800 border border-gray-700 focus:border-yellowGreen-800 rounded-md outline-none ring ring-transparent focus:ring-yellowGreen-800"
                         type="text"
                         placeholder="Last name"
+                        value={lastName}
+                        onChange={(e) => setLastName(e.target.value)}
                         id="last_name"
                       />
                     </div>
@@ -73,6 +136,8 @@ const Contact = () => {
                       <input
                         className="py-2 px-4 h-11 w-full text-gray-500 placeholder-gray-500 bg-gray-800 border border-gray-700 focus:border-yellowGreen-800 rounded-md outline-none ring ring-transparent focus:ring-yellowGreen-800"
                         type="email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
                         id="email"
                         placeholder="john@email.com"
                       />
@@ -88,6 +153,8 @@ const Contact = () => {
                         <input
                           className="py-2 pl-2 pr-4 h-full text-gray-500 placeholder-gray-500 border-0 bg-transparent focus:outline-none"
                           type="text"
+                          value={mobile}
+                          onChange={(e) => setMobile(e.target.value)}
                           id="phone_number"
                           placeholder="+1 (555) 000-0000"
                         />
@@ -104,6 +171,8 @@ const Contact = () => {
                         className="block py-2 px-4 w-full h-44 text-gray-500 placeholder-gray-500 bg-gray-800 border border-gray-700 focus:border-yellowGreen-800 rounded-md outline-none ring ring-transparent focus:ring-yellowGreen-800 resize-none"
                         placeholder="Enter your message"
                         id="message"
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}
                       ></textarea>
                     </div>
                   </div>
@@ -114,23 +183,23 @@ const Contact = () => {
                     <div className="absolute top-0 left-0 w-full h-full rounded-lg ring ring-transparent group-hover:ring-[white] animate-pulse group-hover:ring-1 transition duration-300"></div>
                     <span className="text-white">Submit</span>
                   </button>
-                  <p className="text-sm text-gray-500">
-                    <span className="mr-1" data-config-id="auto-txt-9-4">
-                      We process your information in accordance with our
-                    </span>
-                    <a
-                      className="inline-block font-semibold text-yellowGreen-700 hover:text-yellowGreen-600"
-                      href="#"
-                      data-config-id="auto-txt-10-4"
-                    >
-                      Privacy Policy
-                    </a>
-                  </p>
+                  {contactFormSuccess && (
+                    <div className="flex justify-center items-center text-white">
+                      <FaCheck />
+                      <span className="pl-4">We will contact you soon..</span>
+                    </div>
+                  )}
                 </form>
               </div>
             </div>
           </div>
         </section>
+        {errorMessage === "" ? <></> : <ErrorSnackbar message={errorMessage} />}
+        {contactFormSuccess ? (
+          <SuccessSnackbar message={"Message reached us..!!"} />
+        ) : (
+          <></>
+        )}
       </div>
     </>
   );

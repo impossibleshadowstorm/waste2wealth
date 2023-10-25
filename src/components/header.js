@@ -87,7 +87,6 @@ export default function Header() {
             className={`cursor-pointer ${
               nav ? "" : "text-white hover:text-[#F5D856]"
             }`}
-            // activeClass={`${nav ? "active" : "desktop-active"}`}
           >
             Home
           </Link>
@@ -96,7 +95,6 @@ export default function Header() {
             className={`cursor-pointer ${
               nav ? "" : "text-white hover:text-[#F5D856]"
             }`}
-            // activeClass={`${nav ? "active" : "desktop-active"}`}
           >
             Services
           </Link>
@@ -105,7 +103,6 @@ export default function Header() {
             className={`cursor-pointer ${
               nav ? "" : "text-white hover:text-[#F5D856]"
             }`}
-            // activeClass={`${nav ? "active" : "active"}`}
           >
             About Us
           </Link>
@@ -114,7 +111,6 @@ export default function Header() {
             className={`cursor-pointer ${
               nav ? "" : "text-white hover:text-[#F5D856]"
             }`}
-            // activeClass={`${nav ? "active" : "desktop-active"}`}
           >
             Scrap Rates
           </Link>
@@ -123,14 +119,12 @@ export default function Header() {
             className={`cursor-pointer ${
               nav ? "" : "text-white hover:text-[#F5D856]"
             }`}
-            // activeClass={`${nav ? "active" : "active"}`}
           >
             Contact Us
           </Link>
           <Link
             href=""
             className="xl:hidden btn btn-primary btn-sm max-w-[164px] mx-auto"
-            // activeClass={`${nav ? "active" : "desktop-active"}`}
           >
             Sell Scrapes
           </Link>
