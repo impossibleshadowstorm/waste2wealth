@@ -6,7 +6,7 @@ const Contact = () => {
       {/* Second Contact */}
       <div className="" id="content">
         <section className="relative overflow-hidden">
-          <div className="pt-24 pb-80 md:pb-52 lg:pb-24 bg-gradient-to-b from-slate-900 to-emerald-700">
+          <div className="pt-24 pb-80 md:pb-52 lg:pb-24 bg-gradient-to-b from-black to-emerald-700">
             <div className="container px-4 mx-auto">
               <div className="max-w-sm">
                 {/* tooltip of contact */}
@@ -38,23 +38,21 @@ const Contact = () => {
                     <div className="w-full md:w-1/2 px-4 mb-4">
                       <label
                         className="block mb-1 text-sm font-medium text-white"
-                        for=""
-                        data-config-id="auto-txt-3-4"
+                        htmlFor="first_name"
                       >
                         First name
                       </label>
                       <input
                         className="py-2 px-4 h-11 w-full text-gray-500 placeholder-gray-500 bg-gray-800 border border-gray-700 focus:border-yellowGreen-800 rounded-md outline-none ring ring-transparent focus:ring-yellowGreen-800"
                         type="text"
+                        id="first_name"
                         placeholder="First name"
-                        data-config-id="auto-input-1-4"
                       />
                     </div>
                     <div className="w-full md:w-1/2 px-4 mb-4">
                       <label
                         className="block mb-1 text-sm font-medium text-white"
-                        for=""
-                        data-config-id="auto-txt-4-4"
+                        htmlFor="last_name"
                       >
                         Last name
                       </label>
@@ -62,29 +60,27 @@ const Contact = () => {
                         className="py-2 px-4 h-11 w-full text-gray-500 placeholder-gray-500 bg-gray-800 border border-gray-700 focus:border-yellowGreen-800 rounded-md outline-none ring ring-transparent focus:ring-yellowGreen-800"
                         type="text"
                         placeholder="Last name"
-                        data-config-id="auto-input-2-4"
+                        id="last_name"
                       />
                     </div>
                     <div className="w-full md:w-1/2 px-4 mb-4">
                       <label
                         className="block mb-1 text-sm font-medium text-white"
-                        for=""
-                        data-config-id="auto-txt-5-4"
+                        htmlFor="email"
                       >
                         Email
                       </label>
                       <input
                         className="py-2 px-4 h-11 w-full text-gray-500 placeholder-gray-500 bg-gray-800 border border-gray-700 focus:border-yellowGreen-800 rounded-md outline-none ring ring-transparent focus:ring-yellowGreen-800"
                         type="email"
+                        id="email"
                         placeholder="john@email.com"
-                        data-config-id="auto-input-3-4"
                       />
                     </div>
                     <div className="w-full md:w-1/2 px-4 mb-4">
                       <label
                         className="block mb-1 text-sm font-medium text-white"
-                        for=""
-                        data-config-id="auto-txt-6-4"
+                        htmlFor="phone_number"
                       >
                         Phone number
                       </label>
@@ -92,23 +88,22 @@ const Contact = () => {
                         <input
                           className="py-2 pl-2 pr-4 h-full text-gray-500 placeholder-gray-500 border-0 bg-transparent focus:outline-none"
                           type="text"
+                          id="phone_number"
                           placeholder="+1 (555) 000-0000"
-                          data-config-id="auto-input-5-4"
                         />
                       </div>
                     </div>
                     <div className="w-full px-4">
                       <label
                         className="block mb-1 text-sm font-medium text-white"
-                        for=""
-                        data-config-id="auto-txt-7-4"
+                        htmlFor="message"
                       >
                         Message
                       </label>
                       <textarea
                         className="block py-2 px-4 w-full h-44 text-gray-500 placeholder-gray-500 bg-gray-800 border border-gray-700 focus:border-yellowGreen-800 rounded-md outline-none ring ring-transparent focus:ring-yellowGreen-800 resize-none"
                         placeholder="Enter your message"
-                        data-config-id="auto-input-6-4"
+                        id="message"
                       ></textarea>
                     </div>
                   </div>

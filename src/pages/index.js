@@ -1,9 +1,5 @@
 "use client";
 import Hero from "@/components/hero";
-// import AboutUs from "@/pages/about-us";
-// import BackToTopBtn from "@/components/back-to-top-btn";
-// import Cta from "@/components/cta";
-// import GetStarted from "@/components/get-started";
 import Services from "@/components/services";
 import TrustedPartner from "@/components/trusted-partner";
 import LocateUs from "@/components/locate-us";
@@ -40,10 +36,9 @@ export default function Home() {
       <Hero
         showAuthModal={showAuthModal}
       />
-      <div className="lg:h-[90px] w-[100vw] bg-[#0E0E0E]"></div>
+      <div className="lg:h-[90px] w-[100vw] bg-[#09311A]"></div>
       <HowWeWork />
-      {/* <GetStarted /> */}
-      <div className="h-[90px] w-[100vw] bg-[#0E0E0E]"></div>
+      {/* <div className="h-[90px] w-[100vw] bg-[#09311A]"></div> */}
       <AppreciatedBy />
       <Services />
       <TrustedPartner />
@@ -51,8 +46,6 @@ export default function Home() {
       <Stats />
       <WhyUs />
       <ContactUs />
-      {/* <Cta />
-      <BackToTopBtn /> */}
       <AuthModal show={show} hideAuthModal={hideAuthModal} showSuccessAppointmentModal={showSuccessAppointmentModal}/>
       <SuccessfulAppointmentModal
         show={showSuccessAppointment}
@@ -62,7 +55,6 @@ export default function Home() {
           "Our Representative will call you before pickup on your selected date. Check your Mail for more details."
         }
       />
-      {/* {show && <AuthModal show={show} hideAuthModal={hideAuthModal} />} */}
     </>
   );
 }

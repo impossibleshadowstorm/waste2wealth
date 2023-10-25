@@ -6,7 +6,7 @@ import { staggerContainer, fadeIn } from "../utils/motion";
 const HowWeWork = () => {
   return (
     <div className="" id="content">
-      <section className="relative pt-20 bg-[#0E0E0E] overflow-hidden">
+      <section className="relative pt-20 bg-[#09311A] overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap -m-6 mb-12">
             <div className="w-full p-6">
@@ -128,15 +128,15 @@ const HowWeWork = () => {
                 </motion.div>
                 <motion.div
                   variants={fadeIn("right", "tween", 0.2, 1)}
-                  className="pl-4 lg:bottom-0 lg:block hidden lg:right-0 lg:w-3/5 lg:absolute h-[600px]"
+                  className="pl-4 lg:bottom-48 lg:block hidden lg:right-0 lg:w-3/5 lg:absolute h-[500px]"
                 >
                   <div className="relative h-full">
                     <Image
                       fill
                       priority
                       className="relative z-10 ml-auto"
-                      style={{ objectFit: "cover" }}
-                      src="/images/how-we-work.png"
+                      style={{ objectFit: "contain" }}
+                      src="/images/how-we-work.jpeg"
                       alt=""
                     />
                     <div className="absolute w-full -top-16 left-32 bg-gradient-cyan h-16 rounded-tl-3xl"></div>

@@ -4,7 +4,7 @@ import React, { useContext, useState } from "react";
 import { ErrorSnackbar, SuccessSnackbar } from "./snackbars";
 import { SearchContext } from "@/context/search";
 import { apiConfig } from "@/api/api-config";
-import { FaCross, FaX } from "react-icons/fa6";
+import { FaX } from "react-icons/fa6";
 
 const AuthModal = ({ show, hideAuthModal, showSuccessAppointmentModal }) => {
   const { location, date, hour } = useContext(SearchContext);
@@ -64,20 +64,13 @@ const AuthModal = ({ show, hideAuthModal, showSuccessAppointmentModal }) => {
     }
 
     try {
-      const headers = {
-        "Content-Type": "application/json",
-      };
-      const response = await apiConfig.post(
-        `user/${email}`,
-        {
-          id: email,
-          phone: 7261854534,
-          location: location,
-          date: date[0].startDate,
-          hour: hour,
-        },
-        headers
-      );
+      const response = await apiConfig.post(`user/${email}`, {
+        id: email,
+        phone: 7261854534,
+        location: location,
+        date: date[0].startDate,
+        hour: hour,
+      });
 
       if (response.status === 201) {
         setSentOtp(response?.data?.booking_id);
@@ -99,15 +92,21 @@ const AuthModal = ({ show, hideAuthModal, showSuccessAppointmentModal }) => {
 
   return (
     <section
-      class={`z-50 fixed top-0 left-0 flex items-center justify-center w-full h-full bg-black bg-opacity-5 ${
+      className={`z-50 fixed top-0 left-0 flex items-center justify-center w-full h-full bg-black bg-opacity-5 ${
         show ? "block" : "hidden"
       }`}
     >
-      <div class="p-4 max-w-xl w-full">
-        <div class="relative p-6 py-11 bg-black rounded-5xl">
+      <div className="p-4 max-w-xl w-full">
+        <div className="relative p-6 py-11 bg-black rounded-5xl">
           <div className="flex justify-between">
             <div className="relative h-[60px] w-[125px]">
-              <Image fill priority class="" src="icons/logo-white.svg" alt="" />
+              <Image
+                fill
+                priority
+                className=""
+                src="icons/logo-white.svg"
+                alt=""
+              />
             </div>
             <div
               onClick={hideAuthModal}
@@ -117,22 +116,22 @@ const AuthModal = ({ show, hideAuthModal, showSuccessAppointmentModal }) => {
               <FaX className="text-[15px] font-bold" />
             </div>
           </div>
-          <h3 class="mb-4 text-3xl font-medium text-white text-center tracking-3xl">
+          <h3 className="mb-4 text-3xl font-medium text-white text-center tracking-3xl">
             Authenticate
           </h3>
-          <p class="mb-10 text-white text-center max-w-sm mx-auto">
+          <p className="mb-10 text-white text-center max-w-sm mx-auto">
             Nightsable is a strategic branding agency focused on brand creation,
             rebrands, and brand
           </p>
           <form>
-            <div class="flex flex-wrap -m-2">
-              <div class="w-full p-2">
-                <div class="relative border border-gray-900 focus-within:border-white overflow-hidden rounded-2xl">
-                  <span class="absolute top-2.5 left-6 inline-block text-xs text-gray-300">
+            <div className="flex flex-wrap -m-2">
+              <div className="w-full p-2">
+                <div className="relative border border-gray-900 focus-within:border-white overflow-hidden rounded-2xl">
+                  <span className="absolute top-2.5 left-6 inline-block text-xs text-gray-300">
                     Enter your e-mail
                   </span>
                   <input
-                    class="px-6 pt-6 pb-2.5 text-gray-300 w-full placeholder-gray-300 outline-none bg-transparent"
+                    className="px-6 pt-6 pb-2.5 text-gray-300 w-full placeholder-gray-300 outline-none bg-transparent"
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
@@ -141,13 +140,13 @@ const AuthModal = ({ show, hideAuthModal, showSuccessAppointmentModal }) => {
                 </div>
               </div>
               {otpField.fieldVisible && (
-                <div class="w-full p-2">
-                  <div class="relative border border-gray-900 focus-within:border-white overflow-hidden rounded-2xl">
-                    <span class="absolute top-2.5 left-6 inline-block text-xs text-gray-300">
+                <div className="w-full p-2">
+                  <div className="relative border border-gray-900 focus-within:border-white overflow-hidden rounded-2xl">
+                    <span className="absolute top-2.5 left-6 inline-block text-xs text-gray-300">
                       OTP
                     </span>
                     <input
-                      class="px-6 pt-6 pb-2.5 text-gray-300 w-full placeholder-gray-300 outline-none bg-transparent [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                      className="px-6 pt-6 pb-2.5 text-gray-300 w-full placeholder-gray-300 outline-none bg-transparent [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
                       type="number"
                       maxLength="6"
                       value={otp}
@@ -160,11 +159,11 @@ const AuthModal = ({ show, hideAuthModal, showSuccessAppointmentModal }) => {
                   </div>
                 </div>
               )}
-              <div class="w-full p-2">
-                <div class="flex flex-wrap pt-2 -m-3">
-                  <div class="w-full p-3">
+              <div className="w-full p-2">
+                <div className="flex flex-wrap pt-2 -m-3">
+                  <div className="w-full p-3">
                     <div
-                      class="block px-14 py-4 text-center font-medium tracking-2xl bg-primary hover:bg-green-500 text-white focus:ring-4 focus:ring-green-500 focus:ring-opacity-40 rounded-full transition duration-300 cursor-pointer"
+                      className="block px-14 py-4 text-center font-medium tracking-2xl bg-primary hover:bg-green-500 text-white focus:ring-4 focus:ring-green-500 focus:ring-opacity-40 rounded-full transition duration-300 cursor-pointer"
                       href="#"
                       onClick={() => {
                         otpField.fieldVisible

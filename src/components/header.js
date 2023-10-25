@@ -55,12 +55,7 @@ export default function Header() {
         }`}
       >
         <div className="flex justify-between items-center px-4">
-          <Link
-            href="/"
-            smooth={desktopMode}
-            spy={true}
-            className="cursor-pointer"
-          >
+          <Link href="/" className="cursor-pointer">
             <Image
               src={nav ? "/icons/primary-logo.svg" : "/icons/logo-white.svg"}
               width={194}
@@ -92,9 +87,7 @@ export default function Header() {
             className={`cursor-pointer ${
               nav ? "" : "text-white hover:text-[#F5D856]"
             }`}
-            activeClass={`${nav ? "active" : "desktop-active"}`}
-            smooth={desktopMode}
-            spy={true}
+            // activeClass={`${nav ? "active" : "desktop-active"}`}
           >
             Home
           </Link>
@@ -103,9 +96,7 @@ export default function Header() {
             className={`cursor-pointer ${
               nav ? "" : "text-white hover:text-[#F5D856]"
             }`}
-            activeClass={`${nav ? "active" : "desktop-active"}`}
-            smooth={desktopMode}
-            spy={true}
+            // activeClass={`${nav ? "active" : "desktop-active"}`}
           >
             Services
           </Link>
@@ -114,9 +105,7 @@ export default function Header() {
             className={`cursor-pointer ${
               nav ? "" : "text-white hover:text-[#F5D856]"
             }`}
-            activeClass={`${nav ? "active" : "active"}`}
-            smooth={desktopMode}
-            spy={true}
+            // activeClass={`${nav ? "active" : "active"}`}
           >
             About Us
           </Link>
@@ -125,9 +114,7 @@ export default function Header() {
             className={`cursor-pointer ${
               nav ? "" : "text-white hover:text-[#F5D856]"
             }`}
-            activeClass={`${nav ? "active" : "desktop-active"}`}
-            smooth={desktopMode}
-            spy={true}
+            // activeClass={`${nav ? "active" : "desktop-active"}`}
           >
             Scrap Rates
           </Link>
@@ -136,18 +123,14 @@ export default function Header() {
             className={`cursor-pointer ${
               nav ? "" : "text-white hover:text-[#F5D856]"
             }`}
-            activeClass={`${nav ? "active" : "active"}`}
-            smooth={desktopMode}
-            spy={true}
+            // activeClass={`${nav ? "active" : "active"}`}
           >
             Contact Us
           </Link>
           <Link
             href=""
             className="xl:hidden btn btn-primary btn-sm max-w-[164px] mx-auto"
-            activeClass={`${nav ? "active" : "desktop-active"}`}
-            smooth={desktopMode}
-            spy={true}
+            // activeClass={`${nav ? "active" : "desktop-active"}`}
           >
             Sell Scrapes
           </Link>
