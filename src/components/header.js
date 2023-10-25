@@ -67,7 +67,7 @@ export default function Header() {
           {/* Nav OPen Menu */}
           <div
             className="cursor-pointer xl:hidden"
-            onClick={() => setNav(!nav)}
+            onClick={() => nav ? setNav(!nav) : console.log()}
           >
             {nav ? (
               <BiX className="text-4xl" />
@@ -84,7 +84,7 @@ export default function Header() {
         >
           <Link
             href="/"
-            onClick={() => setNav(!nav)}
+            onClick={() => nav ? setNav(!nav) : console.log()}
             className={`cursor-pointer ${
               nav ? "" : "text-white hover:text-[#F5D856]"
             }`}
@@ -93,7 +93,7 @@ export default function Header() {
           </Link>
           <Link
             href="services"
-            onClick={() => setNav(!nav)}
+            onClick={() => nav ? setNav(!nav) : console.log()}
             className={`cursor-pointer ${
               nav ? "" : "text-white hover:text-[#F5D856]"
             }`}
@@ -102,7 +102,7 @@ export default function Header() {
           </Link>
           <Link
             href="about-us"
-            onClick={() => setNav(!nav)}
+            onClick={() => nav ? setNav(!nav) : console.log()}
             className={`cursor-pointer ${
               nav ? "" : "text-white hover:text-[#F5D856]"
             }`}
@@ -111,7 +111,7 @@ export default function Header() {
           </Link>
           <Link
             href="scrap-rates"
-            onClick={() => setNav(!nav)}
+            onClick={() => nav ? setNav(!nav) : console.log()}
             className={`cursor-pointer ${
               nav ? "" : "text-white hover:text-[#F5D856]"
             }`}
@@ -120,7 +120,7 @@ export default function Header() {
           </Link>
           <Link
             href="contact-us"
-            onClick={() => setNav(!nav)}
+            onClick={() => nav ? setNav(!nav) : console.log()}
             className={`cursor-pointer ${
               nav ? "" : "text-white hover:text-[#F5D856]"
             }`}
@@ -129,7 +129,7 @@ export default function Header() {
           </Link>
           <Link
             href=""
-            onClick={() => setNav(!nav)}
+            onClick={() => nav ? setNav(!nav) : console.log()}
             className="hidden btn btn-primary btn-sm max-w-[164px] mx-auto"
           >
             Sell Scrapes
