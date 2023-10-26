@@ -67,7 +67,7 @@ export default function Header() {
           {/* Nav OPen Menu */}
           <div
             className="cursor-pointer xl:hidden"
-            onClick={() => nav ? setNav(!nav) : console.log()}
+            onClick={() => setNav(!nav)}
           >
             {nav ? (
               <BiX className="text-4xl" />
