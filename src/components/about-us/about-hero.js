@@ -16,13 +16,13 @@ const AboutHero = () => {
               </h1>
             </div>
             <p className="mt-6 mb-10 text-base leading-7 text-white">
-              Waste2Wealth, an initiative by W2W, is a pioneering
-              technology-driven venture recognized under Start-up India. Our
-              innovative approach leverages a SaaS (Software as a Service) model
-              to revolutionize the waste management sector. We{"'"}re dedicated
-              to transforming waste into valuable opportunities, contributing to
-              a sustainable and prosperous future. Join us on this journey from
-              waste to wealth.
+              Scrap Up, an initiative by W2W, is a pioneering technology-driven
+              venture recognized under Start-up India. Our innovative approach
+              leverages a SaaS (Software as a Service) model to revolutionize
+              the waste management sector. We{"'"}re dedicated to transforming
+              waste into valuable opportunities, contributing to a sustainable
+              and prosperous future. Join us on this journey from waste to
+              wealth.
             </p>
             <span
               className="font-serif italic text-4xl text-[#F5D856]"
@@ -50,15 +50,15 @@ const AboutHero = () => {
           </div>
         </div>
         <p className="mt-6 mb-10 text-base leading-7 text-white p-8">
-          Waste2Wealth, building upon the success of The Kabadiwala, began as a
+          Scrap Up, building upon the success of The Kabadiwala, began as a
           service for households and expanded to serve businesses, corporates,
           and institutions, addressing their Extended Producer Responsibility
           (EPR) requirements. Collaborating with the state government, we{"'"}ve
           managed and transformed the city{"'"}s waste landscape, establishing
           Material Recovery Facility (MRF) Centers. We{"'"}re proud to empower
           waste workers from the informal sector, ensuring fair wages. Today,
-          Waste2Wealth stands as the ultimate solution for all your waste
-          management needs, turning chaos into opportunity.
+          Scrap Up stands as the ultimate solution for all your waste management
+          needs, turning chaos into opportunity.
         </p>
       </div>
     </section>

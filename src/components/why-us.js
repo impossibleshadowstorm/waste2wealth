@@ -5,20 +5,9 @@ import { FaComputer, FaDollarSign, FaTruck } from "react-icons/fa6";
 const WhyUs = () => {
   return (
     <section
-      data-section-id="1"
-      data-share=""
-      data-category="pricing"
-      data-component-id="3ccf8f54_05_awz"
       className="relative py-20 overflow-hidden bg-gray-50"
     >
-      {/* <Image
-        className="absolute top-0 left-0 -ml-32 md:-ml-0"
-        src="/images/circle-left-star.png"
-        alt=""
-        style={{ objectFit: "contain" }}
-        fill
-        priority
-      /> */}
+    
       <div className="relative container px-4 mx-auto">
         <div className="max-w-2xl lg:max-w-5xl mx-auto mb-20 text-center">
           <span className="inline-block py-1 px-3 mb-4 text-xs font-semibold bg-primary text-white rounded-full uppercase">
@@ -28,18 +17,7 @@ const WhyUs = () => {
             <span>Why</span> <span className="font-serif italic">Choose</span>{" "}
             Us
           </h1>
-          {/* <div className="flex items-center justify-center">
-            <span className="text-sm sm:text-xl text-gray-900">
-              Billed Monthly
-            </span>
-            <div className="inline-flex mx-3 p-1 items-center justify-end bg-gray-100 rounded-full">
-              <button className="w-5 h-5 bg-transparent rounded-full"></button>
-              <button className="w-5 h-5 bg-orange-900 rounded-full"></button>
-            </div>
-            <span className="text-sm sm:text-xl text-gray-900">
-              Billed Yearly
-            </span>
-          </div> */}
+        
         </div>
         <div className="max-w-4xl mx-auto">
           <div className="max-w-md md:max-w-none mx-auto p-12 mb-6 bg-white rounded-3xl shadow-lg">

@@ -89,52 +89,6 @@ const Stats = () => {
           </div>
         </div>
 
-        <div className="max-w-5xl mx-auto">
-          <div className="relative flex -mb-4 flex-wrap items-center justify-between">
-            <span className="relative inline-block w-full md:w-auto mb-4 uppercase text-sm font-medium">
-              <span
-                className="absolute top-0 left-0 text-gray-200"
-                data-config-id="auto-txt-9-1"
-              >
-                GREAT COLLABORATION
-              </span>
-              <span
-                className="bg-clip-text bg-gradient-to-br from-indigo-800 to-gray-200 text-transparent relative z-10 animate-pulse"
-                data-config-id="auto-txt-10-1"
-              >
-                GREAT COLLABORATION
-              </span>
-            </span>
-            <span className="relative inline-block w-full md:w-auto mb-4 uppercase text-sm font-medium">
-              <span
-                className="absolute top-0 left-0 text-gray-200"
-                data-config-id="auto-txt-11-1"
-              >
-                Everything youd need to podcasts
-              </span>
-              <span
-                className="bg-clip-text bg-gradient-to-br from-indigo-800 to-gray-200 text-transparent relative z-10 animate-pulse"
-                data-config-id="auto-txt-12-1"
-              >
-                Everything youd need to podcasts
-              </span>
-            </span>
-            <span className="relative inline-block w-full md:w-auto mb-4 uppercase text-sm font-medium">
-              <span
-                className="absolute top-0 left-0 text-gray-200"
-                data-config-id="auto-txt-13-1"
-              >
-                FASTEST TRANSFER
-              </span>
-              <span
-                className="bg-clip-text bg-gradient-to-br from-indigo-800 to-gray-200 text-transparent relative z-10 animate-pulse"
-                data-config-id="auto-txt-14-1"
-              >
-                FASTEST TRANSFER
-              </span>
-            </span>
-          </div>
-        </div>
       </div>
     </section>
   );

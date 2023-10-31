@@ -62,13 +62,13 @@ export default function AboutUs() {
                 </h1>
               </div>
               <p className="mb-6 text-base leading-7 text-gray-300 pb-8">
-                At Waste2Wealth, we hold a firm belief that India has the
-                potential to become a greener and cleaner nation. Our vision is
-                simple yet powerful: as every household takes the initiative to
-                recycle their dry scrap, we can collectively contribute to a
-                more sustainable and eco-friendly future. Together, we can turn
-                this vision into a reality. Join us on this journey towards a
-                cleaner and greener India.
+                At Scrap Up, we hold a firm belief that India has the potential
+                to become a greener and cleaner nation. Our vision is simple yet
+                powerful: as every household takes the initiative to recycle
+                their dry scrap, we can collectively contribute to a more
+                sustainable and eco-friendly future. Together, we can turn this
+                vision into a reality. Join us on this journey towards a cleaner
+                and greener India.
               </p>
               <a
                 href="#"

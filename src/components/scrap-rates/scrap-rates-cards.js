@@ -14,7 +14,7 @@ const listOneByOne = {
 const ScrapRatesCards = ({ itemsData }) => {
   return (
     <section className="container mx-auto p-10 md:py-20 px-0 md:p-20 md:px-0">
-      <section className="grid lg:grid-cols-4 2xl:grid-cols-4 sm:grid-cols-2 md:grid-cols-3 grid-cols-1 gap-16 antialiased">
+      <section className="grid lg:grid-cols-5 2xl:grid-cols-4 sm:grid-cols-2 md:grid-cols-3 grid-cols-1 gap-16 antialiased">
         {itemsData.map((data, index) => (
           <motion.div
             key={index}
@@ -25,18 +25,13 @@ const ScrapRatesCards = ({ itemsData }) => {
               once: true,
             }}
             custom={index}
-            // whileInView={{}}
-            // initial={{ opacity: 0, translateX: -50, translateY: -50 }}
-            // animate={{ opacity: 1, translateX: 0, translateY: 0 }}
-            // transition={{ duration: 0.3, delay: index * 0.5 }}
-            // viewport={{ once: false }}
-            className={`flex flex-col shadow-xl mx-auto max-w-sm   px-12 transform duration-500 hover:-translate-y-2 cursor-pointer max-h-190 rounded-md w-full ${
+            className={`flex flex-col shadow-xl mx-auto max-w-sm px-6 transform duration-500 hover:-translate-y-2 cursor-pointer max-h-90 rounded-md w-full ${
               index % 2 == 0
-                ? "bg-blue-100 py-20"
-                : "mt-0 md:mt-20 bg-purple-100 py-10"
+                ? "bg-blue-100 py-12"
+                : "mt-0 md:mt-20 bg-purple-100 py-5"
             }`}
           >
-            <div className="min-h-62 h-[120px] relative">
+            <div className="min-h-62 h-[80px] relative">
               <Image
                 fill
                 priority

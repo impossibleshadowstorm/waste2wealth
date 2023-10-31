@@ -24,7 +24,7 @@ export default function Footer() {
                 <Link href="/">
                   <div className="mb-11 flex flex-start relative h-[45px] w-[120px]">
                     <Image
-                      src="/icons/logo-white.svg"
+                      src="/icons/logo2.png"
                       alt=""
                       data-config-id="auto-img-2-4"
                       className=""
@@ -215,7 +215,7 @@ export default function Footer() {
             className="text-gray-400 text-sm text-center"
             data-config-id="auto-txt-2-4"
           >
-            © Copyright 2023. All Rights Reserved by Waste2Wealth.
+            © Copyright 2023. All Rights Reserved by Scrap Up.
           </p>
         </div>
       </section>

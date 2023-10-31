@@ -8,7 +8,7 @@ export default function Document() {
         <meta
           key="description"
           name="description"
-          content="Waste2Wealth is our passion project, dedicated to transforming waste into valuable opportunities."
+          content="Scrap Up is our passion project, dedicated to transforming waste into valuable opportunities."
         />
       </Head>
       <body>

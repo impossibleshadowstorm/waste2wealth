@@ -12,6 +12,7 @@ import AuthModal from "@/components/common/auth-modal";
 import { useContext, useState } from "react";
 import { SuccessfulAppointmentModal } from "@/components/common/snackbars";
 import { SearchContext } from "@/context/search";
+import Founder from "@/components/founder";
 
 export default function Home() {
   // const [show, setShow] = useState(false);
@@ -43,6 +44,7 @@ export default function Home() {
       <AppreciatedBy />
       <Services />
       <TrustedPartner />
+      <Founder />
       <LocateUs />
       <Stats />
       <WhyUs />
