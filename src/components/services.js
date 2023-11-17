@@ -179,7 +179,7 @@ export default function Services() {
                     <div className="flex justify-between">
                       <div className="my-2">
                         <p className="text-sm text-primary group-hover:text-white">
-                          Waste2Wealth provides EPR compliance, secure Paper
+                        Scrap Up provides EPR compliance, secure Paper
                           Shredding, Circular Economy planning, Zero Waste
                           solutions, Dismantling, CRS campaigns, MRF
                           collaboration, and innovative IEC for organizations.

@@ -16,6 +16,9 @@ const AuthModal = ({ show, hideAuthModal, showSuccessAppointmentModal }) => {
 
   const [email, setEmail] = useState("");
   const [otp, setOtp] = useState("");
+  const [name, setName] = useState("");
+  const [address, setAddress] = useState("");
+  const [mobile, setMobile] = useState("");
   const [snackbar, setSnackbar] = useState(false);
   const [successSnackbar, setSuccessSnackbar] = useState(false);
   const [sentOtp, setSentOtp] = useState("");
@@ -66,7 +69,9 @@ const AuthModal = ({ show, hideAuthModal, showSuccessAppointmentModal }) => {
     try {
       const response = await apiConfig.post(`user/${email}`, {
         id: email,
-        phone: 7261854534,
+        phone: mobile,
+        landmark: address,
+        name: name,
         location: location,
         date: date[0].startDate,
         hour: hour,
@@ -136,6 +141,48 @@ const AuthModal = ({ show, hideAuthModal, showSuccessAppointmentModal }) => {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Email"
+                  />
+                </div>
+              </div>
+              <div className="w-full p-2">
+                <div className="relative border border-gray-900 focus-within:border-white overflow-hidden rounded-2xl">
+                  <span className="absolute top-2.5 left-6 inline-block text-xs text-gray-300">
+                    Enter your Name
+                  </span>
+                  <input
+                    className="px-6 pt-6 pb-2.5 text-gray-300 w-full placeholder-gray-300 outline-none bg-transparent"
+                    type="text"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    placeholder="Name"
+                  />
+                </div>
+              </div>
+              <div className="w-full p-2">
+                <div className="relative border border-gray-900 focus-within:border-white overflow-hidden rounded-2xl">
+                  <span className="absolute top-2.5 left-6 inline-block text-xs text-gray-300">
+                    Enter your Mobile Number
+                  </span>
+                  <input
+                    className="px-6 pt-6 pb-2.5 text-gray-300 w-full placeholder-gray-300 outline-none bg-transparent  [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                    type="number"
+                    value={mobile}
+                    onChange={(e) => setMobile(e.target.value)}
+                    placeholder="Mobile Number"
+                  />
+                </div>
+              </div>
+              <div className="w-full p-2">
+                <div className="relative border border-gray-900 focus-within:border-white overflow-hidden rounded-2xl">
+                  <span className="absolute top-2.5 left-6 inline-block text-xs text-gray-300">
+                    Enter your Pickup Address
+                  </span>
+                  <input
+                    className="px-6 pt-6 pb-2.5 text-gray-300 w-full placeholder-gray-300 outline-none bg-transparent"
+                    type="text"
+                    value={address}
+                    onChange={(e) => setAddress(e.target.value)}
+                    placeholder="Door Address"
                   />
                 </div>
               </div>

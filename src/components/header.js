@@ -57,9 +57,9 @@ export default function Header() {
         <div className="flex justify-between items-center px-4">
           <Link href="/" className="cursor-pointer">
             <Image
-              src={nav ? "/icons/logo-new.svg" : "/icons/logo-white.svg"}
+              src={nav ? "/icons/logo-new.svg" : "/icons/logoo.png"}
               width={194}
-              height={64}
+              height={54}
               alt="Logo"
               priority
             />
@@ -92,6 +92,15 @@ export default function Header() {
             Home
           </Link>
           <Link
+            href="scrap-rates"
+            onClick={() => nav ? setNav(!nav) : console.log()}
+            className={`cursor-pointer ${
+              nav ? "" : "text-white hover:text-[#F5D856]"
+            }`}
+          >
+            Scrap Rates
+          </Link>
+          <Link
             href="services"
             onClick={() => nav ? setNav(!nav) : console.log()}
             className={`cursor-pointer ${
@@ -109,15 +118,7 @@ export default function Header() {
           >
             About Us
           </Link>
-          <Link
-            href="scrap-rates"
-            onClick={() => nav ? setNav(!nav) : console.log()}
-            className={`cursor-pointer ${
-              nav ? "" : "text-white hover:text-[#F5D856]"
-            }`}
-          >
-            Scrap Rates
-          </Link>
+         
           <Link
             href="contact-us"
             onClick={() => nav ? setNav(!nav) : console.log()}
